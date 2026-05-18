@@ -1,0 +1,23 @@
+[
+  {
+    "categoria": "Estafas Digitales",
+    "fecha": "18/05/2026",
+    "titulo": "Nueva modalidad de phishing por WhatsApp",
+    "descripcion": "Usuarios reciben enlaces falsos simulando bancos y empresas.",
+    "url": "estafas.html"
+  },
+  {
+    "categoria": "Ciberseguridad",
+    "fecha": "18/05/2026",
+    "titulo": "Buenas prácticas para proteger tus cuentas",
+    "descripcion": "La autenticación en dos pasos ayuda a reducir riesgos digitales.",
+    "url": "ciberseguridad.html"
+  },
+  {
+    "categoria": "Inteligencia Artificial",
+    "fecha": "18/05/2026",
+    "titulo": "IA como herramienta para programadores",
+    "descripcion": "La inteligencia artificial optimiza procesos de desarrollo web.",
+    "url": "ia.html"
+  }
+]
