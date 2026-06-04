@@ -6,8 +6,102 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* ── Layout en cascada ── */
+        .noticias-cascada {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .noticia-item {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .noticia-item-header {
+            background: #0f172a;
+            color: #fff;
+            padding: 0.7rem 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .noticia-item-categoria {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            font-family: 'Courier New', monospace;
+            color: #38bdf8;
+        }
+
+        .noticia-item-body {
+            padding: 1.2rem 1.4rem;
+        }
+
+        .noticia-item-body h3 {
+            font-size: 1.05rem;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+
+        .noticia-item-body p {
+            font-size: 0.88rem;
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 0.8rem;
+        }
+
+        .noticia-item-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            font-size: 0.72rem;
+            font-family: 'Courier New', monospace;
+            color: #888;
+            border-top: 1px solid #f0f0f0;
+            padding: 0.7rem 1.4rem;
+        }
+
+        .noticia-item-footer a {
+            color: #0369a1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .noticia-item-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Etiqueta de nivel */
+        .tag {
+            display: inline-block;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.18rem 0.55rem;
+            border-radius: 3px;
+            margin-bottom: 0.6rem;
+            font-family: 'Courier New', monospace;
+        }
+        .tag-alto   { background: rgba(232,0,58,.1);   color: #e8003a;  border: 1px solid #e8003a; }
+        .tag-medio  { background: rgba(245,197,24,.12); color: #b08800;  border: 1px solid #f5c518; }
+        .tag-info   { background: rgba(96,165,250,.12); color: #0369a1;  border: 1px solid #60a5fa; }
+    </style>
 </head>
 <body>
+
 <header>
     <h1>Inteligencia Artificial</h1>
     <nav>
@@ -22,17 +116,135 @@
 
 <main>
     <section class="hero">
-        <h2>Impacto de la IA en la tecnología</h2>
-        <p>Descubre cómo la inteligencia artificial transforma
-           la programación y la seguridad digital.
-        </p>
+        <h2>🤖 Impacto de la IA en la tecnología</h2>
+        <p>Descubre cómo la inteligencia artificial transforma la programación, la seguridad digital y la sociedad.</p>
+    </section>
+
+    <section>
+        <h2>Últimas noticias sobre IA</h2>
+
+        <div class="noticias-cascada">
+
+            <!-- ── NOTICIA 1 ── -->
+            <div class="noticia-item">
+                <div class="noticia-item-header">
+                    <span>🧠</span>
+                    <span class="noticia-item-categoria">IA Generativa · Modelos de lenguaje</span>
+                </div>
+                <div class="noticia-item-body">
+                    <span class="tag tag-alto">🔴 Impacto alto</span>
+                    <h3>GPT-5 supera benchmarks humanos en razonamiento matemático y lógico</h3>
+                    <p>
+                        OpenAI presentó GPT-5 con mejoras significativas en tareas de razonamiento formal.
+                        En pruebas independientes, el modelo superó el rendimiento promedio humano en olimpiadas
+                        de matemáticas y lógica proposicional, abriendo debates sobre el avance hacia la AGI.
+                    </p>
+                </div>
+                <div class="noticia-item-footer">
+                    <span>📅 12 may 2026</span>
+                    <span>Fuente: MIT Technology Review</span>
+                    <a href="#">Leer más →</a>
+                </div>
+            </div>
+
+            <!-- ── NOTICIA 2 ── -->
+            <div class="noticia-item">
+                <div class="noticia-item-header">
+                    <span>🔐</span>
+                    <span class="noticia-item-categoria">IA · Ciberseguridad</span>
+                </div>
+                <div class="noticia-item-body">
+                    <span class="tag tag-medio">🟡 Impacto medio</span>
+                    <h3>Empresas adoptan IA defensiva para detectar intrusiones en tiempo real</h3>
+                    <p>
+                        Herramientas basadas en modelos de aprendizaje automático están siendo integradas en
+                        centros de operaciones de seguridad (SOC). Estas soluciones analizan millones de eventos
+                        por segundo y reducen el tiempo de respuesta ante amenazas de horas a segundos.
+                    </p>
+                </div>
+                <div class="noticia-item-footer">
+                    <span>📅 3 abr 2026</span>
+                    <span>Fuente: Wired</span>
+                    <a href="#">Leer más →</a>
+                </div>
+            </div>
+
+            <!-- ── NOTICIA 3 ── -->
+            <div class="noticia-item">
+                <div class="noticia-item-header">
+                    <span>🎭</span>
+                    <span class="noticia-item-categoria">IA · Deepfakes · Riesgos</span>
+                </div>
+                <div class="noticia-item-body">
+                    <span class="tag tag-alto">🔴 Impacto alto</span>
+                    <h3>Deepfakes de audio y video alcanzan nivel de detección casi imposible para humanos</h3>
+                    <p>
+                        Un estudio de la Universidad de Stanford reveló que personas no entrenadas identifican
+                        correctamente un deepfake apenas el 53% de las veces, prácticamente igual que el azar.
+                        Esto refuerza la urgencia de herramientas automáticas de verificación de contenido.
+                    </p>
+                </div>
+                <div class="noticia-item-footer">
+                    <span>📅 18 mar 2026</span>
+                    <span>Fuente: Stanford HAI</span>
+                    <a href="#">Leer más →</a>
+                </div>
+            </div>
+
+            <!-- ── NOTICIA 4 ── -->
+            <div class="noticia-item">
+                <div class="noticia-item-header">
+                    <span>💼</span>
+                    <span class="noticia-item-categoria">IA · Mercado laboral</span>
+                </div>
+                <div class="noticia-item-body">
+                    <span class="tag tag-info">🔵 Informativo</span>
+                    <h3>IA en el desarrollo de software: el 40% del código ya es generado por asistentes IA</h3>
+                    <p>
+                        GitHub Copilot, Cursor y otros asistentes de programación han transformado el flujo de
+                        trabajo de los desarrolladores. Según un informe de McKinsey, el 40% del código producido
+                        en empresas tecnológicas en 2025 fue sugerido o completado por IA, reduciendo tiempos
+                        de desarrollo hasta en un 35%.
+                    </p>
+                </div>
+                <div class="noticia-item-footer">
+                    <span>📅 2 feb 2026</span>
+                    <span>Fuente: McKinsey / GitHub</span>
+                    <a href="#">Leer más →</a>
+                </div>
+            </div>
+
+            <!-- ── NOTICIA 5 ── -->
+            <div class="noticia-item">
+                <div class="noticia-item-header">
+                    <span>⚖️</span>
+                    <span class="noticia-item-categoria">IA · Regulación · Ética</span>
+                </div>
+                <div class="noticia-item-body">
+                    <span class="tag tag-medio">🟡 Impacto medio</span>
+                    <h3>La Unión Europea activa el AI Act: primeras restricciones a sistemas de alto riesgo</h3>
+                    <p>
+                        Desde enero de 2026, el Reglamento de IA de la UE (AI Act) exige auditorías obligatorias
+                        para sistemas de IA usados en salud, justicia y empleo. Las empresas que incumplan
+                        enfrentan multas de hasta 30 millones de euros o el 6% de su facturación global.
+                    </p>
+                </div>
+                <div class="noticia-item-footer">
+                    <span>📅 15 ene 2026</span>
+                    <span>Fuente: Comisión Europea</span>
+                    <a href="#">Leer más →</a>
+                </div>
+            </div>
+
+        </div><!-- /noticias-cascada -->
     </section>
 </main>
 
 <footer>
     <p>© 2026 AlertaTech News</p>
 </footer>
-    <script src="js/app.js"></script>
+
+<script src="js/app.js"></script>
 <script src="js/search.js"></script>
 <script src="js/darkmode.js"></script>
 </body>
