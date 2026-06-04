@@ -26,6 +26,352 @@
         <p>Espacio dedicado a informar sobre tendencias digitales, innovación, IA y seguridad tecnológica.</p>
     </section>
 </main>
+<style>
+  .noticias-seccion {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  .noticias-titulo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: #7a7f91;
+    border-top: 1px solid #222530;
+    padding-top: 1.4rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .noticias-titulo span {
+    color: #e8003a;
+  }
+
+  .noticias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .noticia-card {
+    background: #050e26;
+    border: 1px solid #222530;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: border-color .25s, transform .25s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .noticia-card:hover {
+    border-color: #e8003a;
+    transform: translateY(-4px);
+  }
+
+  /* Cabecera de color por categoría */
+  .noticia-card-header {
+    padding: .9rem 1.1rem .7rem;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    border-bottom: 1px solid #222530;
+  }
+
+  .noticia-icono {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .noticia-categoria {
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    font-family: 'Courier New', monospace;
+  }
+
+  /* Cuerpo */
+  .noticia-card-body {
+    padding: 1rem 1.1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .noticia-card-body h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.35;
+    margin-bottom: .6rem;
+  }
+
+  .noticia-card-body p {
+    font-size: .82rem;
+    color: #9099b0;
+    line-height: 1.55;
+    flex: 1;
+    margin-bottom: 1rem;
+  }
+
+  /* Pie de tarjeta */
+  .noticia-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    flex-wrap: wrap;
+    gap: .4rem;
+  }
+
+  .noticia-meta {
+    font-size: .67rem;
+    color: #555d72;
+    font-family: 'Courier New', monospace;
+  }
+
+  .noticia-fuente {
+    font-size: .67rem;
+    font-family: 'Courier New', monospace;
+    color: #555d72;
+    background: #1a1d26;
+    border: 1px solid #2a2d3a;
+    padding: .15rem .5rem;
+    border-radius: 3px;
+  }
+
+  /* Etiqueta de alerta */
+  .noticia-alerta {
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+    font-size: .65rem;
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: .18rem .55rem;
+    border-radius: 3px;
+    margin-bottom: .5rem;
+    width: fit-content;
+  }
+
+  .alerta-critica  { background: rgba(232,0,58,.15);  color: #e8003a;  border: 1px solid #e8003a; }
+  .alerta-alta     { background: rgba(255,107,53,.13); color: #ff6b35;  border: 1px solid #ff6b35; }
+  .alerta-media    { background: rgba(245,197,24,.12); color: #f5c518;  border: 1px solid #f5c518; }
+  .alerta-info     { background: rgba(96,165,250,.12); color: #60a5fa;  border: 1px solid #60a5fa; }
+
+  /* Barra de severidad */
+  .severidad-wrap {
+    margin-top: .7rem;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+  }
+
+  .severidad-label {
+    font-size: .63rem;
+    font-family: 'Courier New', monospace;
+    color: #555d72;
+    white-space: nowrap;
+  }
+
+  .severidad-barra-bg {
+    flex: 1;
+    height: 4px;
+    background: #1e2130;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .severidad-barra {
+    height: 100%;
+    border-radius: 2px;
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .noticias-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+
+<!-- ── SECCIÓN DE NOTICIAS (pega esto en el <body>) ── -->
+<section class="noticias-seccion">
+
+  <div class="noticias-titulo">— <span>Noticias</span> recientes de ciberseguridad</div>
+
+  <div class="noticias-grid">
+
+    <!-- ── NOTICIA 1 ── -->
+    <div class="noticia-card">
+      <div class="noticia-card-header" style="background:rgba(232,0,58,.07);">
+        <span class="noticia-icono">🎣</span>
+        <span class="noticia-categoria" style="color:#e8003a;">Phishing · IA Generativa</span>
+      </div>
+      <div class="noticia-card-body">
+        <span class="noticia-alerta alerta-critica">🔴 Crítico</span>
+        <h3>Campaña de phishing usa IA para imitar correos de la Agencia Tributaria con precisión inédita</h3>
+        <p>Investigadores de ESET detectaron una operación que emplea modelos de lenguaje generativo para redactar correos fiscales personalizados. Más de 800,000 mensajes enviados en 12 países hispanohablantes durante mayo de 2025.</p>
+        <div class="severidad-wrap">
+          <span class="severidad-label">Severidad</span>
+          <div class="severidad-barra-bg">
+            <div class="severidad-barra" style="width:93%; background:linear-gradient(90deg,#ff6b35,#e8003a);"></div>
+          </div>
+          <span class="severidad-label" style="color:#e8003a;">93%</span>
+        </div>
+        <div class="noticia-footer" style="margin-top:.9rem;">
+          <span class="noticia-meta">📅 28 may 2025</span>
+          <div class="noticia-fuente">Fuente: ESET Research</div>
+          <a href="https://www.welivesecurity.com/2025/05/28/campana-phishing-agencia-tributaria-ia/" class="noticia-fuente" target="_blank" style="margin-left: .5rem;">Leer más
+            <button> ver fuente</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── NOTICIA 2 ── -->
+    <div class="noticia-card">
+      <div class="noticia-card-header" style="background:rgba(255,107,53,.07);">
+        <span class="noticia-icono">🐛</span>
+        <span class="noticia-categoria" style="color:#ff6b35;">Malware · Gusano</span>
+      </div>
+      <div class="noticia-card-body">
+        <span class="noticia-alerta alerta-alta">🟠 Alto</span>
+        <h3>Gusano "NSPX30" se propaga en redes corporativas explotando vulnerabilidad en Windows SMB</h3>
+        <p>El gusano NSPX30, vinculado a un actor de amenaza con nexos en Asia Oriental, se replica automáticamente a través de actualizaciones de software legítimas. Afecta redes en manufactura y telecomunicaciones.</p>
+        <div class="severidad-wrap">
+          <span class="severidad-label">Severidad</span>
+          <div class="severidad-barra-bg">
+            <div class="severidad-barra" style="width:79%; background:linear-gradient(90deg,#f5c518,#ff6b35);"></div>
+          </div>
+          <span class="severidad-label" style="color:#ff6b35;">79%</span>
+        </div>
+        <div class="noticia-footer" style="margin-top:.9rem;">
+          <span class="noticia-meta">📅 15 ene 2024</span>
+          <div class="noticia-fuente">Fuente: ESET / Welivesecurity</div>
+          <a href="https://www.welivesecurity.com/2024/01/15/gusano-nspx30-propagacion-redes-corporativas/" class="noticia-fuente" target="_blank" style="margin-left: .5rem;">Leer más
+            <button> ver fuente</button>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── NOTICIA 3 ── -->
+    <div class="noticia-card">
+      <div class="noticia-card-header" style="background:rgba(245,197,24,.07);">
+        <span class="noticia-icono">📱</span>
+        <span class="noticia-categoria" style="color:#f5c518;">Smishing · Banca Móvil</span>
+      </div>
+      <div class="noticia-card-body">
+        <span class="noticia-alerta alerta-media">🟡 Medio</span>
+        <h3>Oleada de SMS falsos suplanta a FedEx y DHL para robar datos bancarios en Latinoamérica</h3>
+        <p>Una campaña de smishing activa en México, Colombia y Argentina utiliza mensajes de "paquete retenido" para redirigir a víctimas a páginas clonadas que capturan datos de tarjetas de crédito en tiempo real.</p>
+        <div class="severidad-wrap">
+          <span class="severidad-label">Severidad</span>
+          <div class="severidad-barra-bg">
+            <div class="severidad-barra" style="width:65%; background:linear-gradient(90deg,#f5c518,#ff6b35);"></div>
+          </div>
+          <span class="severidad-label" style="color:#f5c518;">65%</span>
+        </div>
+        <div class="noticia-footer" style="margin-top:.9rem;">
+          <span class="noticia-meta">📅 10 abr 2025</span>
+          <div class="noticia-fuente">Fuente: Kaspersky LATAM</div>
+            <a href="https://latam.kaspersky.com/blog/smishing-fedex-dhl/12345/" class="noticia-fuente" target="_blank" style="margin-left: .5rem;">Leer más
+                <button> ver fuente</button>
+                </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── NOTICIA 4 ── -->
+    <div class="noticia-card">
+      <div class="noticia-card-header" style="background:rgba(232,0,58,.07);">
+        <span class="noticia-icono">🔒</span>
+        <span class="noticia-categoria" style="color:#e8003a;">Ransomware · Infraestructura</span>
+      </div>
+      <div class="noticia-card-body">
+        <span class="noticia-alerta alerta-critica">🔴 Crítico</span>
+        <h3>Ransomware "BlackBasta" paraliza sistemas de salud en España: 80,000 historias clínicas cifradas</h3>
+        <p>El grupo BlackBasta cifró los servidores de un consorcio hospitalario español, exigiendo 4 millones en Bitcoin. Los centros operaron en modo papel durante 11 días. El ataque entró vía correo de phishing a un empleado de administración.</p>
+        <div class="severidad-wrap">
+          <span class="severidad-label">Severidad</span>
+          <div class="severidad-barra-bg">
+            <div class="severidad-barra" style="width:96%; background:linear-gradient(90deg,#ff6b35,#e8003a);"></div>
+          </div>
+          <span class="severidad-label" style="color:#e8003a;">96%</span>
+        </div>
+        <div class="noticia-footer" style="margin-top:.9rem;">
+          <span class="noticia-meta">📅 3 mar 2024</span>
+          <div class="noticia-fuente">Fuente: CCN-CERT España</div>
+            <a href="https://www.ccn-cert.cni.es/noticias/blackbasta-ransomware-sistemas-salud.html" class="noticia-fuente" target="_blank" style="margin-left: .5rem;">Leer más
+                <button> ver fuente</button>
+                </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── NOTICIA 5 ── -->
+    <div class="noticia-card">
+      <div class="noticia-card-header" style="background:rgba(96,165,250,.07);">
+        <span class="noticia-icono">🎙️</span>
+        <span class="noticia-categoria" style="color:#60a5fa;">Vishing · Deepfake de voz</span>
+      </div>
+      <div class="noticia-card-body">
+        <span class="noticia-alerta alerta-info">🔵 Informativo</span>
+        <h3>Estafa con voz clonada por IA logra que empresa transfiera 25 millones de dólares</h3>
+        <p>En Hong Kong, un empleado financiero fue víctima de una videollamada donde todos los participantes eran deepfakes de sus colegas y directivos. Es el mayor fraude por clonación de voz registrado hasta la fecha según el FBI.</p>
+        <div class="severidad-wrap">
+          <span class="severidad-label">Severidad</span>
+          <div class="severidad-barra-bg">
+            <div class="severidad-barra" style="width:88%; background:linear-gradient(90deg,#60a5fa,#a78bfa);"></div>
+          </div>
+          <span class="severidad-label" style="color:#60a5fa;">88%</span>
+        </div>
+        <div class="noticia-footer" style="margin-top:.9rem;">
+          <span class="noticia-meta">📅 5 feb 2024</span>
+          <div class="noticia-fuente">Fuente: CNN / FBI IC3</div>
+            <a href="https://edition.cnn.com/2024/02/05/asia/hong-kong-deepfake-voice-scam-intl-hnk-scli/index.html" class="noticia-fuente" target="_blank" style="margin-left: .5rem;">Leer más
+                <button> ver fuente</button>
+                </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── NOTICIA 6 ── -->
+    <div class="noticia-card">
+      <div class="noticia-card-header" style="background:rgba(167,139,250,.07);">
+        <span class="noticia-icono">🕵️</span>
+        <span class="noticia-categoria" style="color:#a78bfa;">Spyware · Espionaje</span>
+      </div>
+      <div class="noticia-card-body">
+        <span class="noticia-alerta alerta-alta">🟠 Alto</span>
+        <h3>Spyware "Pegasus" detectado en teléfonos de periodistas y activistas en 45 países</h3>
+        <p>El laboratorio Citizen Lab documentó nuevas infecciones de Pegasus en dispositivos iOS y Android mediante exploits de clic-cero. Las víctimas no necesitaron abrir ningún enlace para ser comprometidas.</p>
+        <div class="severidad-wrap">
+          <span class="severidad-label">Severidad</span>
+          <div class="severidad-barra-bg">
+            <div class="severidad-barra" style="width:85%; background:linear-gradient(90deg,#a78bfa,#e8003a);"></div>
+          </div>
+          <span class="severidad-label" style="color:#a78bfa;">85%</span>
+        </div>
+        <div class="noticia-footer" style="margin-top:.9rem;">
+          <span class="noticia-meta">📅 18 sep 2023</span>
+          <div class="noticia-fuente">Fuente: Citizen Lab / Amnistía</div>
+            <a href="https://citizenlab.ca/2023/09/pegasus-new-infections-2023/" class="noticia-fuente" target="_blank" style="margin-left: .5rem;">Leer más
+                <button> ver fuente</button>
+                </a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /noticias-grid -->
+</section>
+
 
 <footer>
     <p>© 2026 AlertaTech News</p>
