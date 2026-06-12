@@ -73,8 +73,8 @@ alertatech-news/
 - Jose - Arquitectura Web
 - Rossmell - Ciberseguridad y estafas digitales
 - Kevin - Noticias y contenido IA
-- Edwin -
-- Aldo Luis - 
+- Edwin - JavaScript, interactividad y funcionalidades dinámicas.
+- Aldo Luis - Frontend y estilos CSS.
 
 ---
 
