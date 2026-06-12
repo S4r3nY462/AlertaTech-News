@@ -53,12 +53,33 @@ alertatech-news/
 ├── ciberseguridad.html
 ├── ia.html
 ├── contacto.html
+├── 404.html
 │
 ├── css/
-│   └── styles.css
+│   ├── styles.css
+│   ├── components.css
+│   └── responsive.css
 │
 ├── js/
-│   └── app.js
+│   ├── app.js
+│   ├── search.js
+│   └── darkmode.js
+│
+├── data/
+│   └── noticias.json
+│
+├── assets/
+│   ├── img/
+│   │   └── readme.txt
+│   │
+│   ├── icons/
+│   │   └── readme.txt
+│   │
+│   └── logos/
+│       └── readme.txt
+│
+├── noticias/
+│   └── phishing-whatsapp.html
 │
 ├── img/
 │   └── readme.txt
