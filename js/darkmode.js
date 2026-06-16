@@ -1,6 +1,6 @@
 const boton = document.getElementById('boton-oscuro');
 
-// Aplicamos Flexbox y quitamos el fondo feo desde el inicio
+// Aplicamos Flexbox y quitamos el fondo feo desde el CSS para que el botón se vea bien tanto en modo claro como oscuro
 boton.style.cssText = "background:none; border:none; padding:0; display:inline-flex; align-items:center; font-size:1.2rem; cursor:pointer;";
 
 // Función para cambiar la apariencia del botón
@@ -11,13 +11,13 @@ function actualizarIcono() {
   localStorage.setItem('modo-oscuro', esOscuro ? 'activo' : 'inactivo');
 }
 
-// 1. Al cargar la página, revisamos si ya estaba activo el modo oscuro
+//  cargar la página
 if (localStorage.getItem('modo-oscuro') === 'activo') {
   document.body.classList.add('modo-oscuro');
 }
 actualizarIcono();
 
-// 2. Al hacer clic, alternamos el modo oscuro y actualizamos el icono
+// 2.  actualiza el icono
 boton.addEventListener('click', () => {
   document.body.classList.toggle('modo-oscuro');
   actualizarIcono();
