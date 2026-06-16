@@ -9,6 +9,7 @@ body {
     background: #f4f7fb;
     color: #222;
     line-height: 1.6;
+    padding-top: 260px !important;
 }
 
 header {
@@ -16,6 +17,11 @@ header {
     color: white;
     padding: 30px 20px;
     text-align: center;
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header h1 {
@@ -32,6 +38,8 @@ nav a {
     text-decoration: none;
     margin: 8px;
     font-weight: bold;
+    display: inline-block;
+    align-self: center;
 }
 
 nav a:hover {
@@ -42,6 +50,7 @@ main {
     max-width: 1100px;
     margin: auto;
     padding: 30px 20px;
+    margin-top: 250px !important;
 }
 
 section {
@@ -59,4 +68,94 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 30px;
+}
+body.modo-oscuro {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+/* 2. Obliga a TODOS los textos a volverse blancos */
+body.modo-oscuro h1,
+body.modo-oscuro h2,
+body.modo-oscuro h3,
+body.modo-oscuro h4,
+body.modo-oscuro h5,
+body.modo-oscuro h6,
+body.modo-oscuro p,
+body.modo-oscuro span,
+body.modo-oscuro li,
+body.modo-oscuro a:not(.btn) { 
+    color: #ffffff !important;
+}
+/* 3. Cambia el contenedor blanco grande (donde está el video) */
+body.modo-oscuro .bg-light,
+body.modo-oscuro .shadow,
+body.modo-oscuro main,
+body.modo-oscuro .container,
+body.modo-oscuro [class*="card"] { 
+    background-color: #1e1e1e !important;
+}
+
+/* 4. Arregla textos secundarios grisáceos */
+body.modo-oscuro .text-muted,
+body.modo-oscuro .text-secondary {
+    color: #b3b3b3 !important; 
+}
+.hero {
+    padding-top: 140px !important;
+    margin-top: 40px !important;
+}
+/* --- ESTO PINTARÁ LA CAJA GRANDE DE NEGRO EN MODO OSCURO --- */
+body.modo-oscuro main,
+body.modo-oscuro .bg-light,
+body.modo-oscuro .bg-white,
+body.modo-oscuro .container,
+body.modo-oscuro .card,
+body.modo-oscuro section {
+    background-color: #1e1e1e !important; /* Un gris oscuro muy elegante */
+}
+/* --- BUSCADOR EXPANDIBLE MODERNO --- */
+.buscador-contenedor {
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 2px 8px;
+    height: 34px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+/* El botón de la lupa siempre visible */
+.buscador-btn {
+    background: solid !important;
+    border: none !important;
+    color: rgb(48, 107, 235) !important;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* La caja de texto empieza oculta sí o sí */
+.buscador-input {
+    background: transparent !important;
+    border: none !important;
+    color: rgb(255, 255, 255) !important;
+    outline: none;
+    font-size: 0.85rem;
+    padding: 0 !important;
+    width: 0px !important; /* Añadimos !important para ganarle a Bootstrap */
+    transition: width 0.3s ease, padding 0.3s ease;
+}
+
+.buscador-input::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* --- CUANDO PASAS EL MOUSE O HACES CLIC SE ABRE --- */
+.buscador-contenedor:hover .buscador-input,
+.buscador-input:focus {
+    width: 120px !important; /* Añadimos !important aquí también */
+    padding: 0 5px !important;
 }

@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
                             <span class="badge bg-primary mb-2">${noticia.categoria}</span>
                             <small class="text-muted mb-2">${noticia.fecha}</small>
                             <h3>${noticia.titulo}</h3>
-                            <p>${noticia.descripcion}</p>
-                            <a href="${noticia.url}">Leer más</a>
+                            <p>${noticia.resumen}</p>
+                            <a href="detalle.html?id=${noticia.id}" class="btn btn-outline-primary btn-sm">Leer más</a>
                         </div>
                     </article>
                 `;

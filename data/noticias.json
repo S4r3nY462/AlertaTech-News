@@ -1,12 +1,13 @@
 [
   {
-    "categoria": "Ciberseguridad",
+    "id": 1,
     "fecha": "2026-06-12",
     "titulo": "Buenas prácticas para proteger tus cuentas",
     "descripcion": "La autenticación en dos pasos y contraseñas seguras ayudan a reducir riesgos digitales.",
     "url": "ciberseguridad.html"
   },
   {
+    "id": 2,
     "categoria": "Estafas Digitales",
     "fecha": "2026-06-12",
     "titulo": "Nueva modalidad de phishing por WhatsApp",
@@ -14,10 +15,369 @@
     "url": "noticias/phishing-whatsapp.html"
   },
   {
-    "categoria": "Inteligencia Artificial",
+    "id": 3,
     "fecha": "2026-06-12",
     "titulo": "IA como herramienta para programadores",
     "descripcion": "La inteligencia artificial ayuda a escribir, revisar y optimizar código en entornos web.",
     "url": "ia.html"
-  }
+  },
+  {
+    "id": 4,
+    "categoria": "Ciberseguridad",
+    "fecha": "2026-06-12",
+    "titulo": "Importancia de las actualizaciones de software",
+    "descripcion": "Mantener el software actualizado es crucial para protegerse contra vulnerabilidades conocidas.",
+    "url": "actualizaciones.html"
+  },
+  {
+    "id": 5,
+    "categoria": "Ciberseguridad",
+    "fecha": "por prensa asosiada 2026-05-27 (13:32 ET)",
+    "titulo": "Reino Unido intensifica esfuerzos contra espionaje cibernético",
+    "descripcion": "Este discurso es el último de una serie de advertencias de expertos en inteligencia que señalan que Rusia está intensificando su actividad hostil en una \"zona gris\".",
+    "url": "noticias/espionaje-reino-unido.html"
+  },
+  {
+    "id": 6,
+    "categoria": "Ciberseguridad",
+    "fecha": "por prensa asosiada 2026-05-27 (13:32 ET)",
+    "titulo": "El jefe de ciberseguridad afirma que los ciberataques más graves contra el Reino Unido provienen ahora de Rusia, Irán y China.",
+    "imagen": "img/bandera.png",
+    "descripcion": [
+      "Richard Horne, director del NCSC —que forma parte del GCHQ, la agencia de inteligencia de señales del Reino Unido—, advirtió que el Reino Unido está viviendo «el cambio geopolítico más trascendental de la historia moderna». Según Horne, las empresas británicas deben prepararse para defenderse de los ciberataques, ya que el Reino Unido podría ser blanco de ataques a gran escala si se viera involucrado en un conflicto internacional\n.",
+      "En los últimos meses, las autoridades de Suecia, Polonia, Dinamarca y Noruega han advertido que piratas informáticos vinculados a Rusia han atacado sus infraestructuras críticas, incluidas centrales eléctricas y presas.\n.",
+      "Horne afirmó que el NCSC actualmente gestiona alrededor de cuatro incidentes cibernéticos de /importancia nacional/ por semana y, si bien la actividad delictiva, como el ransomware, sigue siendo el problema más común, la amenaza más grave proviene de los ciberataques llevados a cabo directa o indirectamente por otros estados.\n.",
+      "Dan Jarvis, ministro de Seguridad del Reino Unido, declaró que el NCSC gestionó más de 200 incidentes de importancia nacional el año pasado, más del doble que el año anterior. Jarvis y Horne intervinieron en la conferencia CyberUK celebrada en Glasgow, Escocia.\n.",
+      "Las operaciones cibernéticas se vuelven más sofisticadas.\n.",
+      "En diciembre, Blaise Metreweli, jefe del Servicio Secreto de Inteligencia británico, o MI6, afirmó que el mundo es ahora más peligroso y conflictivo que en décadas anteriores y que el Reino Unido opera en un espacio entre la paz y la guerra.\n.",
+      "Según afirmó, los servicios de inteligencia y militares de China exhiben un /nivel de sofisticación asombroso en sus operaciones cibernéticas/, mientras que Irán /casi con toda seguridad está utilizando la actividad cibernética para apoyar la represión de ciudadanos británicos en nuestras calles que son considerados una amenaza para el régimen/.\n.",
+      "Mientras tanto, Moscú está utilizando tácticas y técnicas perfeccionadas durante su guerra en Ucrania y las está /llevando más allá del campo de batalla/, afirmó Horne, señalando la /actividad híbrida rusa sostenida/ dirigida contra el Reino Unido y Europa. Las empresas, añadió, deben aprender cómo se han utilizado las operaciones cibernéticas en situaciones de conflicto para reforzar su propia capacidad de respuesta.\n.",
+      "Según Jarvis, los estados hostiles saben que la forma más eficaz de actuar es /no enfrentarnos directamente, sino debilitarnos sigilosamente/, por ejemplo, pirateando los sistemas logísticos que transportan mercancías o comprometiendo a las empresas.\n.",
+      "Comparó el ciberataque contra el mayor fabricante de automóviles británico, Jaguar Land Rover, que mermó el crecimiento económico del Reino Unido a finales del año pasado, con delincuentes enmascarados que se presentan en concesionarios de automóviles, rompen cristales, destrozan ordenadores y roban vehículos del aparcamiento.\n.",
+      "Jarvis afirmó que la IA también facilita los ataques de los adversarios al encontrar vulnerabilidades en los sistemas /más rápido de lo que cualquier equipo humano puede solucionarlas/. Hizo un llamamiento a las empresas de IA para que colaboren con el gobierno británico en el desarrollo de programas a medida que refuercen las defensas cibernéticas del país.\n.",
+      "Los países europeos denuncian ciberataques contra sus infraestructuras.\n.",
+      "En una situación de conflicto, Horne afirmó que el Reino Unido probablemente sufriría ciberataques a gran escala, pero, a diferencia del ransomware, las empresas no podrían pagar para recuperar sus datos y el acceso a sus sistemas. Por ello, señaló que todas las organizaciones deben comprender la magnitud del riesgo al que se enfrentan y mejorar sus defensas cibernéticas antes de que sea demasiado tarde.\n.",
+      "El viernes, las autoridades suecas afirmaron que un grupo prorruso con vínculos con los servicios de seguridad e inteligencia de Rusia estuvo detrás del ciberataque perpetrado el año pasado contra una central térmica.\n.",
+      "Carl-Oskar Bohlin, ministro de Defensa Civil de Suecia, comparó la situación con los incidentes ocurridos en Polonia en diciembre, cuando ciberataques coordinados afectaron a centrales de cogeneración que abastecen de calefacción a casi 500.000 clientes, así como a parques eólicos y solares. Posteriormente, Polonia afirmó que las pruebas indicaban que los piratas informáticos estaban «directamente vinculados a los servicios rusos». Las autoridades noruegas también advirtieron que un ataque informático ocurrido en abril de 2025, que afectó al caudal de una presa, estaba vinculado a Rusia, mientras que en diciembre, las autoridades danesas informaron de otro ataque a una empresa de suministro de agua en 2024 que dejó a algunas viviendas sin agua.\n.",
+      "Los cuatro ciberataques figuran entre los más de 155 incidentes de interrupción —incluidos incendios provocados, sabotaje y espionaje— vinculados a Rusia o a sus aliados por funcionarios occidentales y rastreados por Associated Press desde la invasión a gran escala de Ucrania por parte de Moscú en febrero de 2022.\n.",
+      "Otros incidentes vinculados a Rusia por funcionarios europeos incluyen un ataque al control de tráfico aéreo alemán, intentos de acceder a cuentas de Signal y WhatsApp pertenecientes a funcionarios y periodistas, e intentos de piratas informáticos vinculados a la inteligencia militar rusa de robar datos confidenciales de los usuarios explotando una vulnerabilidad en algunos enrutadores de internet.\n."
+    ],
+    
+    "url": "ciberseguridad.html"
+  },
+  {
+    "id": 7,
+    "categoria": "Ciberseguridad",
+    "fecha": "por prensa asosiada 2026-05-27 (13:32 ET)",
+    "titulo": "Meta afirma que 20.000 cuentas de Instagram fueron pirateadas mediante el abuso de herramientas de IA.",
+    "descripcion": [
+      "El gigante de las redes sociales ha informado a las autoridades sobre el impacto del reciente ataque a una herramienta de recuperación de cuentas.\n.",
+      "Los hackers lograron comprometer numerosas cuentas de Instagram simplemente solicitando al chatbot de Meta que vinculara su propia dirección de correo electrónico a la cuenta objetivo. Esto les permitió restablecer la contraseña y tomar el control de la cuenta\n.",
+      "Según los informes, numerosas cuentas de alto perfil fueron comprometidas y vendidas en la web oscura. La lista de cuentas afectadas incluía las de la Casa Blanca de Obama, Sephora y el sargento mayor de la Fuerza Espacial de EE. UU., John Bentivegna.\n.",
+      "Algunos ciberdelincuentes compartieron vídeos e instrucciones sobre cómo funcionaba el ataque.\n.",
+      "Meta está informando a las autoridades sobre el impacto del incidente, y ha comunicado a la Fiscalía General de Maine que el número total de personas potencialmente afectadas asciende a 20.225.\n.",
+      "Sin embargo, Amber Hannah, asesora jurídica adjunta de Meta para asuntos legales relacionados con la respuesta a incidentes, indicó que la cifra total podría ser menor. La empresa ha contabilizado a los usuarios cuyas contraseñas se restablecieron mediante la herramienta de soporte, que no tenían la autenticación de dos factores (2FA) activada y cuyas cuentas probablemente fueron pirateadas. No obstante, es posible que algunas de estas cuentas hayan sido accedidas por sus legítimos propietarios en lugar de por piratas informáticos.\n.",
+      "La información que Meta ha revelado al fiscal general de Maine revela que la explotación de su herramienta High Touch Support (HTS) fue descubierta el 31 de mayo. \n.",
+      "La herramienta está diseñada para ayudar a los usuarios a recuperar el acceso a sus cuentas después de que hayan sido bloqueadas, pero los piratas informáticos aprovecharon una vulnerabilidad en la herramienta para restablecer las contraseñas de Instagram.\n.",
+      "01 Los usuarios pueden solicitar asistencia de HTS y, como parte de ese proceso, pueden pedir que se les envíe un enlace para restablecer la contraseña a su dirección de correo electrónico. La herramienta en sí funcionó correctamente y según lo previsto; sin embargo, debido a un error en una ruta de código independiente, el sistema no verificó correctamente que la dirección de correo electrónico proporcionada por la persona que solicitaba el restablecimiento de contraseña coincidiera con la dirección de correo electrónico asociada a la cuenta de Instagram de ese usuario. \n.",
+      "02 Como resultado, cuando un usuario proporcionaba una dirección de correo electrónico no asociada previamente a la cuenta, el sistema enviaba incorrectamente un enlace para restablecer la contraseña a esa dirección en lugar de rechazar la solicitud. Esto permitía que terceros no autorizados recibieran un enlace para restablecer la contraseña de cuentas que no les pertenecían. Tras restablecer la contraseña, la persona no autorizada podía acceder a la cuenta si el titular no había activado la autenticación de dos factores (2FA).\n.",
+      "Meta indicó que no está claro si se accedió a la información personal almacenada en las cuentas comprometidas. Sin embargo, los atacantes podrían haber obtenido información de perfil, direcciones de correo electrónico, números de teléfono, fechas de nacimiento, mensajes directos, publicaciones en redes sociales e información sobre la actividad de la cuenta y el historial de interacciones. \n.",
+      "El gigante de las redes sociales ha desactivado la herramienta utilizada de forma indebida y solo la volverá a activar después de asegurarse de que se haya solucionado la vulnerabilidad.\n.",
+      "Los enlaces de restablecimiento de contraseña generados mediante la explotación de la vulnerabilidad han sido invalidados. Además, las cuentas afectadas se han incluido en un control de seguridad obligatorio y se han restablecido sus contraseñas.\n.",
+      "“En cuanto sea posible, Meta tiene previsto enviar notificaciones a los usuarios potencialmente afectados para informarles de este incidente, recomendarles que revisen la configuración de seguridad de su cuenta y que activen la autenticación de dos factores (2FA)”, dijo Hannah. \n."
+    ],
+    "url": "noticias/espionaje-reino-unido.html"
+
+},
+{
+  "id": 8,
+  "categoria": "ia",
+  "titulo": "Anthropic afirma haber desconectado sus últimos modelos de IA para cumplir con los nuevos controles de exportación.",
+  "resumen": "Anthropic ha retirado del mercado sus modelos de IA Fable 5 y Mythos 5 para cumplir con una directiva del gobierno estadounidense que prohíbe su uso por parte de ciudadanos extranjeros. La empresa expresó su desacuerdo con la gestión del gobierno en este asunto y calificó la medida de /malentendido/.",
+  "descripcion": [
+  "Anthropic retira del mercado Fable 5 y Mythos 5 para cumplir con una directiva de la administración Trump que prohíbe su uso por parte de ciudadanos extranjeros.\n.",
+  "Los controles de exportación representan la medida más significativa adoptada hasta la fecha por el gobierno estadounidense para restringir el acceso a los modelos de IA más avanzados. Anthropic lanzó Fable esta semana. Este modelo es una versión limitada del aún más avanzado Mythos, al que la compañía ha restringido estrictamente el acceso por motivos de ciberseguridad.\n.",
+  "En un comunicado, Anthropic expresó su desacuerdo con la gestión del gobierno en este asunto, señalando que recibió la directiva del gobierno estadounidense el viernes por la tarde y que esta no especificaba las preocupaciones de seguridad nacional. «Creemos que el gobierno debería tener la facultad de bloquear despliegues inseguros, como parte de un proceso legal transparente, justo, claro y basado en hechos técnicos», declaró la compañía. «Esta acción no se ajusta a esos principios».\n.",
+  "Anthropic lo calificó de /malentendido/ y afirmó que espera restablecer el acceso a los modelos /lo antes posible/.\n.",
+  "El Departamento de Comercio no respondió de inmediato a la solicitud de comentarios.\n.",
+  "Esta medida se produce 10 días después de que el presidente Donald Trump firmara una orden ejecutiva para establecer un marco que permita al gobierno federal evaluar los riesgos para la seguridad nacional de los sistemas de IA más avanzados durante un mes antes de su lanzamiento público. La participación de los desarrolladores de IA sería voluntaria, según la orden.\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n."
+  ],
+  "url": "noticias/microsoft-exchange.html"
+},
+{
+  "id": 9,
+  "fecha": "14-06-2026",
+  "categoria": "Ciberseguridad",
+  "titulo": "Ciberdelincuentes norcoreanos lanzan un phishing masivo para robar criptomonedas a desarrolladores",
+  "resumen": " Proofpoint, empresa de ciberseguridad y cumplimiento normativo, ha identificado un nuevo clúster de amenazas…",
+  "imagen": "img/korea.png",
+  "descripcion": [
+  "Proofpoint, empresa de ciberseguridad y cumplimiento normativo, ha identificado un nuevo clúster de amenazas probablemente alineado con Corea del Norte, denominado UNK_DeadDrop, que desarrolla campañas de phishing dirigidas a desarrolladores de software mediante el uso de repositorios maliciosos en GitHub, flujos de trabajo de Visual Studio Code y extensiones maliciosas, con el objetivo de robar credenciales y activos relacionados con criptomonedas.\n.",
+  "Los atacantes de UNK_DeadDrop comienzan con correos electrónicos que contienen enlaces a repositorios controlados por los atacantes y presentados como pruebas técnicas, proyectos relacionados con criptomonedas o iniciativas de código abierto, según Proofpoint. Las víctimas son persuadidas para clonar estos repositorios y abrirlos en entornos de desarrollo como Visual Studio Code o Cursor. Una vez abierto el proyecto, se ejecutan tareas preconfiguradas que activan cadenas de infección específicas para Windows, Linux y macOS.\n.",
+  "El uso de extensiones maliciosas de Visual Studio Code es uno de los elementos más destacados de estas campañas, ya que se ejecutan de forma sigilosa y mantienen la persistencia en los sistemas comprometidos con una interacción mínima por parte del usuario. En sistemas Linux y macOS, los atacantes despliegan una variante basada en el framework de código abierto Overlord, que actúa como una puerta trasera con capacidades de acceso remoto. En Windows, la actividad maliciosa se ejecuta directamente dentro del proceso Electron del editor, sin necesidad de instalar binarios adicionales en el sistema.\n.",
+  "Entre abril y mayo, los investigadores observaron una campaña de UNK_DeadDrop que afectó a alrededor de un centenar de organizaciones de tecnología, criptomonedas, finanzas, educación y servicios empresariales. Durante seis semanas, los ciberdelincuentes enviaron más de 250 correos electrónicos incluyendo señuelos con ofertas de empleo para desarrolladores, revisiones de código y colaboraciones en proyectos de software.\n.",
+  "La investigación de Proofpoint refleja la evolución de UNK_DeadDrop de las campañas tradicionales de falsas entrevistas de trabajo hacia operaciones más escalables y sofisticadas, centradas en el abuso de herramientas de desarrollo de confianza.\n.",
+  "El malware empleado en estas campañas recopila información de extensiones de monederos instaladas en navegadores, credenciales almacenadas y otros datos de interés para los atacantes, que luego se envían a servidores de mando y control para su explotación.\n.",
+  "Esta actividad comparte similitudes con operaciones previamente atribuidas a actores norcoreanos, especialmente aquellas centradas en desarrolladores y organizaciones vinculadas a criptomonedas. No obstante, el uso masivo del correo electrónico como vector inicial, el empleo de repositorios especialmente diseñados para distribuir malware y el desarrollo de nuevas técnicas basadas en extensiones VSIX justifican el seguimiento de esta actividad como un clúster independiente, de acuerdo a los investigadores de Proofpoint.\n.",
+  "“Esta campaña demuestra cómo los ciberdelincuentes alineados con Corea del Norte continúan evolucionando sus tácticas para comprometer a desarrolladores y acceder a activos de alto valor”, apuntan los investigadores de Proofpoint. “La combinación de repositorios aparentemente legítimos, la automatización de la ejecución de código y los mecanismos de persistencia discretos evidencia una inversión continuada en herramientas y procedimientos diseñados para integrarse en flujos de trabajo de desarrollo ampliamente utilizados”.\n.",
+  "Tras esta investigación sobre UNK_DeadDrop, Proofpoint recomienda a las organizaciones reforzar los controles sobre entornos de desarrollo, revisar cuidadosamente cualquier repositorio recibido por canales no verificados, supervisar la instalación de extensiones en los editores de código y formar a los equipos de desarrollo para identificar intentos de ingeniería social relacionados con oportunidades laborales o colaboraciones técnicas.\n."
+  ],
+  "url": "noticias/microsoft-exchange.html"
+},
+   
+{
+  "id": 10,
+  "categoria": "Ciberseguridad",
+  "titulo": "El 90% de los delitos de cibercrimen en 2026 son fraudes digitales",
+  "fecha": "28-05-2026",
+  "imagen": "img/fraude.png",
+  "descripcion": [
+  "La inteligencia artificial está redefiniendo el mapa de riesgos de las organizaciones y, al mismo tiempo, transformando la forma en la que actúa el cibercrimen. Desde la compañía española specializada en la seguridad de la información, Secure&IT, trataron este tema en su jornada “Ciberseguridad en la era de la Inteligencia Artificial”.\n.",
+  "En este encuentro, expertos del sector analizaron cómo aprovechar la IA de forma segura y responsable, y cómo reforzar la confianza, la continuidad de negocio y la resiliencia empresarial ante un escenario cada vez más complejo.\n.",
+  "“Actualmente, el 90% de los delitos de cibercrimen son fraudes digitales. Hemos evolucionado de pequeños actores a un sistema complejo y organizado”, señaló David Aguilar Triviño, jefe del Grupo de Análisis y Cooperación Internacional del Departamento contra el Cibercrimen de la UCO, encargado de inaugurar esta jornada.\n.",
+  "Aguilar explicó que los ciberdelincuentes operan ya con una lógica muy similar a la empresarial, cuentan con desarrolladores de código, pentesters, perfiles comerciales, campañas de reclutamiento e incluso servicios de atención al cliente. “El cibercrimen es cada vez más complejo. Lo que antes era la delincuencia tradicional, ahora se ve aumentado por la ingeniería social. El eslabón más débil siempre es el ser humano, que acaba cayendo en una ciberestafa”, indicaba.\n.",
+  "<h3><strong>LA IA ACELERA LAS AMENAZAS</strong></h3>\n.",
+  "Uno de los ejes principales de la jornada fue el papel de la inteligencia artificial en la evolución del cibercrimen. Más de 200 billones de dólares son las pérdidas estimadas por fraude, cibercrimen y sabotajes asistidos por IA en 2025.\n.",
+  "En este contexto, los grandes grupos criminales usan actualmente modelos de IA para desarrollar herramientas cada vez más sofisticadas y automatizadas. Uno de los ámbitos donde este impacto resulta más visible es la ingeniería social.\n.",
+  "“Las campañas maliciosas son mucho más creíbles actualmente y más difíciles de detectar gracias al uso de mensajes hiperpersonalizados, deepfakes de voz y vídeo o contenidos generados automáticamente para manipular la percepción y alimentar campañas de desinformación”, indicaba el director general de Secure&IT.\n.",
+  "Además, Valencia alertó sobre los riesgos asociados a una adopción descontrolada de estas tecnologías dentro de las organizaciones, como el Shadow AI, la pérdida de control sobre la información, la exposición de datos confidenciales o la dependencia excesiva de herramientas de IA sin una gobernanza adecuada.\n.",
+  "<h3><strong>EUROPA, REGULADORA DE LA IA</strong></h3>\n.",
+  "La regulación fue otro de los ejes de la jornada. Normas como NIS2, DORA, el Reglamento de Inteligencia Artificial o el Cyber Resilience Act están elevando las exigencias de protección y gestión del riesgo para las empresas.\n.",
+  "El debate coincidió además con la reciente aprobación por parte del Consejo de Ministros del proyecto de Ley Orgánica para el buen uso y la gobernanza de la inteligencia artificial.\n.",
+  "“Las organizaciones deben reforzar su gobernanza, evaluar riesgos, proteger la cadena de suministro y garantizar la continuidad de negocio. La normativa ya no exige solo controles técnicos, sino demostrar una gestión responsable y continua de la ciberseguridad”, señaló Juan Manuel Valiente, director de Servicios de Secure&IT.\n.",
+  "La jornada también abordó la realidad específica de los entornos industriales, donde la ciberseguridad afecta directamente a la continuidad operativa, la seguridad física y la capacidad de respuesta ante incidentes\n.",
+  "“Cuando se produce un incidente en planta, las consecuencias pueden ser muy graves, y llega el apocalipsis. Hay una gran dificultad para identificar el origen, va a haber un gran descontrol en la respuesta y con la improvisación la mitigación será ineficiente”, explicó Hugo Llanos, director del Área de Ciberseguridad Industrial de Secure&IT.\n.",
+  "<h4><strong>CÓMO PROTEGER UN NEGOCIO EN LA ERA DE LA IA</strong></h4>\n.",
+  "La jornada también trasladó el debate de la IA al terreno empresarial a través de una mesa redonda con responsables de tecnología y seguridad de AMAVIR, Grupo Osborne y Sigma Foods. Los participantes coincidieron en que la adopción de la IA ya forma parte de la realidad de las organizaciones, pero requiere una aproximación ordenada, basada en el análisis del riesgo y la protección de los datos.\n.",
+  "“La IA es una realidad que se nos viene encima y se nos abren una gran cantidad de ecosistemas, ataques… Y esto puede asustar. Es una realidad a la que nos estamos enfrentando, por ello, creo que deberían salir también herramientas de IA que de verdad nos protejan y que nos ayuden a gestionar y a hacer frente a vulnerabilidades, y las necesitamos ya, porque los atacantes ya cuentan con estas herramientas”, explicaba Alberto López, CISO de Europa en Sigma Foods.\n.",
+  "Esta idea también fue respaldada por Ibor Rodríguez, CIO de AMAVIR: “Necesitamos que nos ayuden en la gobernanza y en el control de los usos de estas herramientas de IA. Ahora mismo, esto es lo más importante”, aseguraba.\n.",
+  "Desde el Grupo Osborne, su CTO y CISO, Carlos Navarro, explicaba que, ahora mismo, necesitamos evolucionar al mismo ritmo que los ciberdelincuentes para poder hacer frente a las ciberamenazas: “Sobre qué debería de hacer la industria para protegernos a las empresas, sin duda, evolucionar a la par que evolucionan los ciberataques y el cibercrimen. En tecnología hay que correr mucho para estar todos en el mismo sitio, y eso es lo que le pedimos a la industria”, concluía.\n.",
+  "\n.",
+  "\n.",
+  "\n."
+  ],
+  "url": "noticias/microsoft-exchange.html"
+},
+   
+{
+  "id": 11,
+  "categoria": "Ciberseguridad",
+  "titulo": "Prometía mayor seguridad: Claude Fable 5 fue hackeado antes de cumplir dos días en el mercado",
+  "resumen": "El modelo de IA más seguro de Anthropic quedó en entredicho después de que un investigador asegurara haber vulnerado sus barreras de protección/.",
+  "fecha": "28-05-2026",
+  "imagen": "img/claude.png",
+  "descripcion": [
+  "El lanzamiento de Claude Fable 5 como uno de los modelos de inteligencia artificial más avanzados y seguros de Anthropic ha quedado bajo escrutinio. Menos de 48 horas después de su debut, un investigador conocido en la comunidad de IA como “Pliny the Liberator” aseguró haber vulnerado las barreras de seguridad del sistema mediante una serie de técnicas de jailbreak que permitieron eludir los filtros diseñados por la compañía.\n.",
+  "La información fue difundida por el propio investigador a través de una publicación en la red social X. Según explicó, consiguió “liberar” a Claude Fable 5 apenas un día después de que Anthropic pusiera a disposición del público este modelo, presentado como una alternativa más accesible a Mythos y equipado con mecanismos de protección reforzados para impedir respuestas relacionadas con actividades potencialmente peligrosas.\n.",
+  "<h3><strong>Un hackeo que pone a prueba las promesas de Anthropic</strong></h3>\n.",
+  "Anthropic había destacado que Claude Fable 5 incorporaba uno de los sistemas de seguridad más sofisticados desarrollados hasta ahora. Entre sus mecanismos figuraban clasificadores capaces de detectar solicitudes relacionadas con ciberseguridad, química, biología e intentos de extracción del conocimiento interno del modelo.\n.",
+  "Cuando el sistema identificaba una consulta considerada riesgosa, esta era redirigida automáticamente hacia Claude Opus 4.8, una versión specializada en gestionar preguntas sensibles.\n.",
+  "Sin embargo, Pliny sostuvo que estas barreras pudieron ser superadas utilizando una combinación de estrategias avanzadas. Entre ellas mencionó el uso de caracteres Unicode y homoglifos, marcos narrativos y académicos, técnicas de descomposición y recomposición de peticiones y una versión modificada de Claude Opus 4.8.\n.",
+  "De acuerdo con el investigador, el objetivo consistía en lograr que la inteligencia artificial respondiera preguntas que normalmente habrían sido bloqueadas por los filtros de seguridad.\n.",
+  "<h3><strong>La técnica más efectiva consistió en fragmentar las preguntas</strong></h3>\n.",
+  "Según la explicación difundida por Pliny, el método que ofreció mejores resultados fue la denominada “descomposición y recomposición en el backend”.\n.",
+  "En lugar de formular directamente una solicitud que pudiera activar las alarmas del sistema, las preguntas eran divididas en varias partes aparentemente inofensivas. Cada fragmento superaba los controles de forma independiente y, posteriormente, eran reunidos para reconstruir la petición original.\n.",
+  "Esta estrategia permitió obtener respuestas que, en teoría, debían permanecer restringidas. El caso ha reabierto el debate sobre la eficacia real de las barreras de seguridad implementadas en los modelos de inteligencia artificial más avanzados.\n.",
+  "<h3><strong>Quién es Pliny the Liberator</strong></h3>\n.",
+  "Pliny the Liberator es una figura anónima ampliamente conocida entre investigadores y desarrolladores de IA. Durante los últimos años se ha dedicado a descubrir vulnerabilidades en sistemas como ChatGPT, Grok y versiones anteriores de Claude.\n.",
+  "Según un reportaje de la revista Time, comenzó a compartir públicamente sus técnicas después de que varias empresas ignoraran las advertencias privadas que les había enviado acerca de diferentes fallos.\n.",
+  "Actualmente administra una comunidad en Discord con más de 20.000 miembros, donde se desarrollan colectivamente nuevos métodos de jailbreak.\n.",
+  "Su trabajo también ha contado con apoyo financiero del inversor Marc Andreessen y ha colaborado con OpenAI en tareas relacionadas con el fortalecimiento de los sistemas de seguridad.\n.",
+  "<h3><strong>Un debate abierto sobre la seguridad de la IA</strong></h3>\n.",
+  "Aunque las técnicas de jailbreak suelen generar controversia, Pliny sostiene que su intención no es provocar daños, sino demostrar que los riesgos existen y que deben ser comprendidos antes de que sean explotados por actores maliciosos.\n.",
+  "Entre sus actividades también figura la extracción de los llamados prompts de sistema, es decir, las instrucciones ocultas que determinan cómo se comporta un modelo de inteligencia artificial. El investigador defiende que, a medida que estas herramientas adquieren un papel más importante en la sociedad, los usuarios tienen derecho a conocer los principios que rigen sus respuestas.\n.",
+  "El caso de Claude Fable 5 plantea nuevas preguntas para la industria. Si uno de los modelos que Anthropic presentó como más seguros pudo ser vulnerado en menos de dos días, expertos y desarrolladores deberán evaluar hasta qué punto las actuales barreras son capaces de resistir frente a técnicas cada vez más sofisticadas.\n.",
+  "Por el momento, Anthropic no ha emitido un pronunciamiento público sobre las afirmaciones realizadas por Pliny the Liberator ni sobre el supuesto alcance de la vulneración reportada.\n."
+  ],
+  "url": "noticias/microsoft-exchange.html"
+},
+   
+{
+  "id": 12,
+  "categoria": "Ciberseguridad",
+  "titulo": "Ciberataque masivo a Microsoft Exchange",
+  "descripcion": [
+  "Un grupo de hackers ha explotado vulnerabilidades en Microsoft Exchange para comprometer servidores y acceder a datos sensibles de los usuarios.\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n."
+  ],
+  "url": "noticias/microsoft-exchange.html"
+},
+  
+{
+  "id": 13,
+  "categoria": "Ciberseguridad",
+  "titulo": "Ciberataque masivo a Microsoft Exchange",
+  "descripcion": [
+  "Un grupo de hackers ha explotado vulnerabilidades en Microsoft Exchange para comprometer servidores y acceder a datos sensibles de los usuarios.\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n."
+  ],
+  "url": "noticias/microsoft-exchange.html"
+},
+  
+{
+  "id": 14,
+  "categoria": "Ciberseguridad",
+  "titulo": "Ciberataque masivo a Microsoft Exchange",
+  "descripcion": [
+  "Un grupo de hackers ha explotado vulnerabilidades en Microsoft Exchange para comprometer servidores y acceder a datos sensibles de los usuarios.\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n."
+  ],
+  "url": "noticias/microsoft-exchange.html"
+},
+  
+{
+  "id": 15,
+  "categoria": "Ciberseguridad",
+  "titulo": "Ciberataque masivo a Microsoft Exchange",
+  "descripcion": [
+  "Un grupo de hackers ha explotado vulnerabilidades en Microsoft Exchange para comprometer servidores y acceder a datos sensibles de los usuarios.\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n."
+  ],
+  "url": "noticias/microsoft-exchange.html"
+},
+   
+{
+  "id": 16,
+  "categoria": "Ciberseguridad",
+  "titulo": "Ciberataque masivo a Microsoft Exchange",
+  "descripcion": [
+  "Un grupo de hackers ha explotado vulnerabilidades en Microsoft Exchange para comprometer servidores y acceder a datos sensibles de los usuarios.\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n."
+  ],
+  "url": "noticias/microsoft-exchange.html"
+},
+  
+{
+  "id": 17,
+  "categoria": "Ciberseguridad",
+  "titulo": "Ciberataque masivo a Microsoft Exchange",
+  "descripcion": [
+  "Un grupo de hackers ha explotado vulnerabilidades en Microsoft Exchange para comprometer servidores y acceder a datos sensibles de los usuarios.\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n."
+  ],
+  "url": "noticias/microsoft-exchange.html"
+},
+  
+{
+  "id": 18,
+  "categoria": "Ciberseguridad",
+  "titulo": "Ciberataque masivo a Microsoft Exchange",
+  "descripcion": [
+  "Un grupo de hackers ha explotado vulnerabilidades en Microsoft Exchange para comprometer servidores y acceder a datos sensibles de los usuarios.\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n.",
+  "\n."
+  ],
+  "url": "noticias/microsoft-exchange.html"
+}
 ]
+
