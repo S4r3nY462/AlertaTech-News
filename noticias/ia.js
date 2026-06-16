@@ -1,4 +1,4 @@
-const RSS_URL = "https://es.mittechnologyreview.com/feed/";
+const RSS_URL = "https://news.google.com/rss/search?q=inteligencia+artificial&hl=es&gl=ES&ceid=ES:es";
 const API_URL = `https://corsproxy.io/?${encodeURIComponent(RSS_URL)}`;
 
 async function actualizarNoticiasIA() {
@@ -28,7 +28,7 @@ async function actualizarNoticiasIA() {
       card.querySelector(".noticia-categoria").textContent = "Inteligencia Artificial";
       card.querySelector(".noticia-meta").textContent = `📅 ${fecha}`;
       card.querySelector("a").href = item.querySelector("link")?.textContent;
-      card.querySelector(".noticia-fuente").textContent = "Fuente: MIT Technology Review en español";
+      card.querySelector(".noticia-fuente").textContent = "Fuente: Google News";
     });
 
   } catch (err) {
