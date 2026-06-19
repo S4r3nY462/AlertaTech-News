@@ -4,339 +4,231 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inteligencia Artificial | AlertaTech News</title>
-
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <style>
-        .noticia-card {
-            background: #050e26;
-            border: 1px solid #222530;
-            border-radius: 6px;
-            overflow: hidden;
-            transition: border-color .25s, transform .25s;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-
-        .noticia-card:hover {
-            border-color: #e8003a;
-            transform: translateY(-4px);
-        }
-
-        .noticia-card-header {
-            padding: .9rem 1.1rem .7rem;
-            display: flex;
-            align-items: center;
-            gap: .6rem;
-            border-bottom: 1px solid #222530;
-        }
-
-        .noticia-icono {
-            font-size: 1.5rem;
-            flex-shrink: 0;
-        }
-
-        .noticia-categoria {
-            font-size: .68rem;
-            font-weight: 700;
-            letter-spacing: .12em;
-            text-transform: uppercase;
-            font-family: 'Courier New', monospace;
-        }
-
-        .noticia-card-body {
-            padding: 1rem 1.1rem 1.2rem;
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-        }
-
-        .noticia-card-body h3 {
-            font-size: 1rem;
-            font-weight: 700;
-            color: #ffffff;
-            line-height: 1.35;
-            margin-bottom: .6rem;
-        }
-
-        .noticia-card-body p {
-            font-size: .82rem;
-            color: #9099b0;
-            line-height: 1.55;
-            flex: 1;
-            margin-bottom: 1rem;
-        }
-
-        .noticia-footer {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: auto;
-            flex-wrap: wrap;
-            gap: .4rem;
-        }
-
-        .noticia-meta {
-            font-size: .67rem;
-            color: #555d72;
-            font-family: 'Courier New', monospace;
-        }
-
-        .noticia-fuente {
-            font-size: .67rem;
-            font-family: 'Courier New', monospace;
-            color: #555d72;
-            background: #1a1d26;
-            border: 1px solid #2a2d3a;
-            padding: .15rem .5rem;
-            border-radius: 3px;
-            text-decoration: none;
-        }
-
-        .noticia-alerta {
-            display: inline-flex;
-            align-items: center;
-            gap: .3rem;
-            font-size: .65rem;
-            font-family: 'Courier New', monospace;
-            font-weight: 700;
-            letter-spacing: .1em;
-            text-transform: uppercase;
-            padding: .18rem .55rem;
-            border-radius: 3px;
-            margin-bottom: .5rem;
-            width: fit-content;
-        }
-
-        .alerta-critica { background: rgba(232,0,58,.15);  color: #e8003a;  border: 1px solid #e8003a; }
-        .alerta-alta    { background: rgba(255,107,53,.13); color: #ff6b35;  border: 1px solid #ff6b35; }
-        .alerta-media   { background: rgba(245,197,24,.12); color: #f5c518;  border: 1px solid #f5c518; }
-        .alerta-info    { background: rgba(96,165,250,.12); color: #60a5fa;  border: 1px solid #60a5fa; }
-
-        .severidad-wrap {
-            margin-top: .7rem;
-            display: flex;
-            align-items: center;
-            gap: .6rem;
-        }
-
-        .severidad-label {
-            font-size: .63rem;
-            font-family: 'Courier New', monospace;
-            color: #555d72;
-            white-space: nowrap;
-        }
-
-        .severidad-barra-bg {
-            flex: 1;
-            height: 4px;
-            background: #1e2130;
-            border-radius: 2px;
-            overflow: hidden;
-        }
-
-        .severidad-barra {
-            height: 100%;
-            border-radius: 2px;
-        }
-
-        .ia-titulo {
-            font-size: 1.3rem;
-            font-weight: 700;
-            letter-spacing: .18em;
-            text-transform: uppercase;
-            color: #7a7f91;
-            border-top: 1px solid #222530;
-            padding-top: 1.4rem;
-            margin-bottom: 1.6rem;
-        }
-
-        .ia-titulo span {
-            color: #e8003a;
-        }
-    </style>
 </head>
-<body>
+<body class="bg-dark text-white">
 
 <header class="text-center">
-    <h1>Inteligencia Artificial</h1>
-    <nav class="d-flex justify-content-center flex-wrap gap-3">
-        <a href="index.html">Inicio</a>
-        <a href="noticias.html">Noticias</a>
-        <a href="estafas.html">Estafas Digitales</a>
-        <a href="ciberseguridad.html">Ciberseguridad</a>
-        <a href="ia.html">Inteligencia Artificial</a>
-        <a href="contacto.html">Contacto</a>
-        <button id="boton-oscuro" class="nav-btn-oscuro"></button>
-        <div class="input-group input-group-sm" style="width: 180px;">
-    <input type="text" class="form-control bg-transparent text-white border-secondary" placeholder="Buscar...">
-    <button class="btn btn-outline-secondary text-white border-secondary" type="button">
-        <i class="bi bi-search"></i>
-    </button>
-</div>
+    <!--expand-lg hace que sea responsivo-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">news</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--collapse lo hace responsivo-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tecnologia.html">tecnología</a></li>
+                    <li class="nav-item"><a class="nav-link" href="investigaciones.html">investigaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="podcast.html">podcast</a></li>
+                    <li class="nav-item"><a class="nav-link" href="entrevistas.html">entrevistas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="geopolitica.html">geopolítica</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">otros</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="seguridad.html">Seguridad</a></li>
+                            <li><a class="dropdown-item" href="privacidad.html">Privacidad</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="legal.html">Legal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar">
+                    <button class="btn btn-outline-success" type="submit">buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-dark text-white py-4">
+        <h1 class="display-5 fw-bold">AlertaTech News</h1>
+        <p class="text-secondary">Noticias sobre tecnología, ciberseguridad, inteligencia artificial y prevención de estafas digitales.</p>
+    </div>
+
+    <nav class="navbar navbar-expand bg-dark border-top border-secondary py-2">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav d-flex flex-wrap justify-content-center align-items-center gap-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Inicio</a>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                        <li><a class="dropdown-item text-white-50" href="index.html">🏠 Principal</a></li>
+                        <li><a class="dropdown-item text-white-50" href="noticias.html">📊 Últimas noticias</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Noticias</a>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                        <li><a class="dropdown-item text-white-50" href="noticias.html">📰 Todas</a></li>
+                        <li><hr class="dropdown-divider border-secondary"></li>
+                        <li><a class="dropdown-item text-white-50" href="noticias.html#malware">🦠 Malware</a></li>
+                        <li><a class="dropdown-item text-white-50" href="noticias.html#ransomware">🔒 Ransomware</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Estafas Digitales</a>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                        <li><a class="dropdown-item text-white-50" href="estafas.html">📱 Todas</a></li>
+                        <li><hr class="dropdown-divider border-secondary"></li>
+                        <li><a class="dropdown-item text-white-50" href="estafas.html#phishing">📱 Phishing</a></li>
+                        <li><a class="dropdown-item text-white-50" href="estafas.html#smishing">💳 Smishing</a></li>
+                        <li><a class="dropdown-item text-white-50" href="estafas.html#vishing">🎙️ Vishing</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Ciberseguridad</a>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html">🔒 Todas</a></li>
+                        <li><hr class="dropdown-divider border-secondary"></li>
+                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html#firewalls">🛡️ Firewalls</a></li>
+                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html#encriptacion">🔐 Encriptación</a></li>
+                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html#hacking-etico">👨‍💻 Hacking ético</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Inteligencia Artificial</a>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                        <li><a class="dropdown-item text-white-50" href="ia.html">🤖 Todas</a></li>
+                        <li><hr class="dropdown-divider border-secondary"></li>
+                        <li><a class="dropdown-item text-white-50" href="ia.html#machine-learning">🤖 Machine Learning</a></li>
+                        <li><a class="dropdown-item text-white-50" href="ia.html#deepfakes">🎙️ Deepfakes</a></li>
+                        <li><a class="dropdown-item text-white-50" href="ia.html#chatbots">💬 Chatbots</a></li>
+                        <li><a class="dropdown-item text-white-50" href="ia.html#ia-seguridad">📊 IA en seguridad</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white p-0" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
 
-<main>
-    <section class="hero">
-        <h2>🤖 Impacto de la IA en la tecnología</h2>
-        <p>Descubre cómo la inteligencia artificial transforma la programación, la seguridad digital y la sociedad.</p>
-    </section>
+<!-- CONTENIDO DE INTELIGENCIA ARTIFICIAL -->
+<main class="container py-5">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="display-4 fw-bold">Inteligencia Artificial</h1>
+            <p class="text-secondary lead">Descubre cómo la IA está transformando el mundo</p>
+            <hr class="border-secondary">
+        </div>
+    </div>
 
-    <section class="container-fluid px-0">
-
-        <div class="ia-titulo">— <span>Noticias</span> recientes de inteligencia artificial</div>
-
-        <div class="row g-4">
-
-            <!-- NOTICIA 1 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="noticia-card" id="ia-1">
-                    <div class="noticia-card-header" style="background:rgba(232,0,58,.07);">
-                        <span class="noticia-icono">🧠</span>
-                        <span class="noticia-categoria" style="color:#e8003a;">IA Generativa · Modelos de lenguaje</span>
-                    </div>
-                    <div class="noticia-card-body">
-                        <span class="noticia-alerta alerta-critica">🔴 Alto impacto</span>
-                        <h3>GPT-5 supera benchmarks humanos en razonamiento matemático y lógico</h3>
-                        <p>OpenAI presentó GPT-5 con mejoras significativas en tareas de razonamiento formal, superando el rendimiento promedio humano en olimpiadas de matemáticas y abriendo debates sobre el avance hacia la AGI.</p>
-                        <div class="severidad-wrap">
-                            <span class="severidad-label">Relevancia</span>
-                            <div class="severidad-barra-bg">
-                                <div class="severidad-barra" style="width:91%; background:linear-gradient(90deg,#ff6b35,#e8003a);"></div>
-                            </div>
-                            <span class="severidad-label" style="color:#e8003a;">91%</span>
-                        </div>
-                        <div class="noticia-footer" style="margin-top:.9rem;">
-                            <span class="noticia-meta">📅 12 may 2026</span>
-                            <a href="https://news.google.com/articles/CBMiQWh0dHA6Ly93d3cudGFrdGEuY29tL2ludGVsaWdlbnRpYS1hcnRpZmljaWFsL2dwdC01LXN1cGVyYS1iZW5jaG1hcmsgaGF1bG9zLW5vLW5lZ2F0aXZvcy8wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD Aw" class="noticia-fuente" target="_blank">Fuente: Google News</a>
-                        </div>
-                    </div>
+    <!-- MACHINE LEARNING -->
+    <div id="machine-learning" class="row mt-4 pt-3 border-top border-secondary">
+        <div class="col-12">
+            <span class="badge bg-primary mb-2">🔵 Informativo</span>
+            <h2 class="h3">Machine Learning: El corazón de la IA</h2>
+            <p class="text-secondary">Los algoritmos que aprenden por sí mismos están revolucionando industrias enteras</p>
+            <div class="bg-dark border border-secondary rounded p-4">
+                <p>El Machine Learning es una rama de la inteligencia artificial que permite a los sistemas aprender y mejorar a partir de la experiencia sin ser programados explícitamente.</p>
+                <h5 class="mt-3">Tipos de aprendizaje:</h5>
+                <ul>
+                    <li><strong>Aprendizaje supervisado:</strong> Se entrena con datos etiquetados</li>
+                    <li><strong>Aprendizaje no supervisado:</strong> Encuentra patrones en datos sin etiquetar</li>
+                    <li><strong>Aprendizaje por refuerzo:</strong> Aprende mediante prueba y error</li>
+                </ul>
+                <h5 class="mt-3">Aplicaciones:</h5>
+                <ul>
+                    <li>Reconocimiento facial y de voz</li>
+                    <li>Recomendaciones en streaming (Netflix, Spotify)</li>
+                    <li>Vehículos autónomos</li>
+                    <li>Diagnóstico médico asistido por IA</li>
+                </ul>
+                <div class="alert alert-info mt-3">
+                    💡 El Machine Learning está presente en más del 80% de las aplicaciones tecnológicas modernas
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- NOTICIA 2 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="noticia-card" id="ia-2">
-                    <div class="noticia-card-header" style="background:rgba(96,165,250,.07);">
-                        <span class="noticia-icono">🔐</span>
-                        <span class="noticia-categoria" style="color:#60a5fa;">IA · Ciberseguridad</span>
-                    </div>
-                    <div class="noticia-card-body">
-                        <span class="noticia-alerta alerta-info">🔵 Informativo</span>
-                        <h3>Empresas adoptan IA defensiva para detectar intrusiones en tiempo real</h3>
-                        <p>Herramientas de aprendizaje automático integradas en centros de operaciones de seguridad (SOC) analizan millones de eventos por segundo, reduciendo el tiempo de respuesta ante amenazas de horas a segundos.</p>
-                        <div class="severidad-wrap">
-                            <span class="severidad-label">Relevancia</span>
-                            <div class="severidad-barra-bg">
-                                <div class="severidad-barra" style="width:74%; background:linear-gradient(90deg,#60a5fa,#a78bfa);"></div>
-                            </div>
-                            <span class="severidad-label" style="color:#60a5fa;">74%</span>
-                        </div>
-                        <div class="noticia-footer" style="margin-top:.9rem;">
-                            <span class="noticia-meta">📅 3 abr 2026</span>
-                            <a href="https://news.google.com/articles/CBMiQWh0dHA6Ly93d3cudGFrdGEuY29tL2ludGVsaWdlbnRpYS1hcnRpZmljaWFsL2dwdC01LXN1cGVyYS1iZW5jaG1hcmsgaGF1bG9zLW5vLW5lZ2F0aXZvcy8wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD Aw" class="noticia-fuente" target="_blank">Fuente: Google News</a>
-                        </div>
-                    </div>
+    <!-- DEEPFAKES -->
+    <div id="deepfakes" class="row mt-5 pt-3 border-top border-secondary">
+        <div class="col-12">
+            <span class="badge bg-danger mb-2">🔴 Crítico</span>
+            <h2 class="h3">Deepfakes: La manipulación digital que preocupa</h2>
+            <p class="text-secondary">La IA genera videos y audios falsos que parecen reales</p>
+            <div class="bg-dark border border-secondary rounded p-4">
+                <p>Los deepfakes son contenidos multimedia manipulados con inteligencia artificial para mostrar eventos que nunca ocurrieron o personas diciendo cosas que nunca dijeron.</p>
+                <h5 class="mt-3">Riesgos de los deepfakes:</h5>
+                <ul>
+                    <li><strong>Desinformación:</strong> Noticias falsas con apariencia real</li>
+                    <li><strong>Suplantación de identidad:</strong> Personas imitadas en videos</li>
+                    <li><strong>Estafas:</strong> Videollamadas falsas para engañar a empleados</li>
+                    <li><strong>Manipulación política:</strong> Influir en procesos electorales</li>
+                </ul>
+                <h5 class="mt-3">Caso reciente:</h5>
+                <p>Una empresa perdió 25 millones de dólares cuando un empleado transfirió dinero tras recibir una videollamada con directivos generados por deepfake.</p>
+                <div class="alert alert-danger mt-3">
+                    ⚠️ Siempre verifica la identidad en llamadas importantes usando preguntas de seguridad
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- NOTICIA 3 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="noticia-card" id="ia-3">
-                    <div class="noticia-card-header" style="background:rgba(232,0,58,.07);">
-                        <span class="noticia-icono">🎭</span>
-                        <span class="noticia-categoria" style="color:#e8003a;">IA · Deepfakes · Riesgos</span>
-                    </div>
-                    <div class="noticia-card-body">
-                        <span class="noticia-alerta alerta-critica">🔴 Alto impacto</span>
-                        <h3>Deepfakes alcanzan nivel de detección casi imposible para humanos</h3>
-                        <p>Un estudio de Stanford reveló que personas no entrenadas identifican correctamente un deepfake apenas el 53% de las veces, prácticamente igual que el azar, reforzando la urgencia de herramientas automáticas de verificación.</p>
-                        <div class="severidad-wrap">
-                            <span class="severidad-label">Relevancia</span>
-                            <div class="severidad-barra-bg">
-                                <div class="severidad-barra" style="width:88%; background:linear-gradient(90deg,#ff6b35,#e8003a);"></div>
-                            </div>
-                            <span class="severidad-label" style="color:#e8003a;">88%</span>
-                        </div>
-                        <div class="noticia-footer" style="margin-top:.9rem;">
-                            <span class="noticia-meta">📅 18 mar 2026</span>
-                            <a href="https://news.google.com/articles/CBMiQWh0dHA6Ly93d3cudGFrdGEuY29tL2ludGVsaWdlbnRpYS1hcnRpZmljaWFsL2dwdC01LXN1cGVyYS1iZW5jaG1hcmsgaGF1bG9zLW5vLW5lZ2F0aXZvcy8wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD Aw" class="noticia-fuente" target="_blank">Fuente: Google News</a>
-                        </div>
-                    </div>
+    <!-- CHATBOTS -->
+    <div id="chatbots" class="row mt-5 pt-3 border-top border-secondary">
+        <div class="col-12">
+            <span class="badge bg-success mb-2">🟢 Informativo</span>
+            <h2 class="h3">Chatbots: Atención al cliente con IA</h2>
+            <p class="text-secondary">Los asistentes virtuales mejoran la experiencia del usuario</p>
+            <div class="bg-dark border border-secondary rounded p-4">
+                <p>Los chatbots son programas de inteligencia artificial diseñados para mantener conversaciones con usuarios, proporcionando información, asistencia y resolviendo consultas.</p>
+                <h5 class="mt-3">Ventajas de los chatbots:</h5>
+                <ul>
+                    <li>Atención 24/7 sin interrupciones</li>
+                    <li>Respuesta inmediata a consultas</li>
+                    <li>Reducción de costos operativos</li>
+                    <li>Personalización según el usuario</li>
+                </ul>
+                <h5 class="mt-3">Ejemplos populares:</h5>
+                <ul>
+                    <li>ChatGPT (OpenAI)</li>
+                    <li>Bard / Gemini (Google)</li>
+                    <li>Claude (Anthropic)</li>
+                    <li>Asistentes de atención al cliente en sitios web</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- IA EN SEGURIDAD -->
+    <div id="ia-seguridad" class="row mt-5 pt-3 border-top border-secondary">
+        <div class="col-12">
+            <span class="badge bg-info text-dark mb-2">🔵 Informativo</span>
+            <h2 class="h3">IA en Ciberseguridad: El futuro de la protección</h2>
+            <p class="text-secondary">La inteligencia artificial está revolucionando la forma en que nos protegemos</p>
+            <div class="bg-dark border border-secondary rounded p-4">
+                <p>La IA está transformando la ciberseguridad, permitiendo detectar amenazas en tiempo real, predecir ataques y responder de manera autónoma.</p>
+                <h5 class="mt-3">Aplicaciones de IA en seguridad:</h5>
+                <ul>
+                    <li><strong>Detección de anomalías:</strong> Identifica comportamientos sospechosos</li>
+                    <li><strong>Análisis predictivo:</strong> Anticipa posibles ataques</li>
+                    <li><strong>Automatización de respuestas:</strong> Reacción inmediata ante amenazas</li>
+                    <li><strong>Identificación de malware:</strong> Reconoce nuevas variantes</li>
+                </ul>
+                <h5 class="mt-3">Beneficios:</h5>
+                <ul>
+                    <li>Análisis de millones de eventos en segundos</li>
+                    <li>Reducción de falsos positivos</li>
+                    <li>Respuesta más rápida a incidentes</li>
+                    <li>Adaptación continua a nuevas amenazas</li>
+                </ul>
+                <div class="alert alert-info mt-3">
+                    📊 El mercado de IA en ciberseguridad crecerá un 25% anual hasta 2030
                 </div>
             </div>
-
-            <!-- NOTICIA 4 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="noticia-card" id="ia-4">
-                    <div class="noticia-card-header" style="background:rgba(245,197,24,.07);">
-                        <span class="noticia-icono">💼</span>
-                        <span class="noticia-categoria" style="color:#f5c518;">IA · Mercado laboral</span>
-                    </div>
-                    <div class="noticia-card-body">
-                        <span class="noticia-alerta alerta-media">🟡 Impacto medio</span>
-                        <h3>El 40% del código ya es generado por asistentes IA</h3>
-                        <p>Según un informe de McKinsey, el 40% del código producido en empresas tecnológicas en 2025 fue sugerido o completado por asistentes como GitHub Copilot y Cursor, reduciendo tiempos de desarrollo hasta en un 35%.</p>
-                        <div class="severidad-wrap">
-                            <span class="severidad-label">Relevancia</span>
-                            <div class="severidad-barra-bg">
-                                <div class="severidad-barra" style="width:67%; background:linear-gradient(90deg,#f5c518,#ff6b35);"></div>
-                            </div>
-                            <span class="severidad-label" style="color:#f5c518;">67%</span>
-                        </div>
-                        <div class="noticia-footer" style="margin-top:.9rem;">
-                            <span class="noticia-meta">📅 2 feb 2026</span>
-                            <a href="https://news.google.com/articles/CBMiQWh0dHA6Ly93d3cudGFrdGEuY29tL2ludGVsaWdlbnRpYS1hcnRpZmljaWFsL2dwdC01LXN1cGVyYS1iZW5jaG1hcmsgaGF1bG9zLW5vLW5lZ2F0aXZvcy8wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD Aw" class="noticia-fuente" target="_blank">Fuente: Google News</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- NOTICIA 5 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="noticia-card" id="ia-5">
-                    <div class="noticia-card-header" style="background:rgba(167,139,250,.07);">
-                        <span class="noticia-icono">⚖️</span>
-                        <span class="noticia-categoria" style="color:#a78bfa;">IA · Regulación · Ética</span>
-                    </div>
-                    <div class="noticia-card-body">
-                        <span class="noticia-alerta alerta-media">🟡 Impacto medio</span>
-                        <h3>La UE activa el AI Act: restricciones a sistemas de alto riesgo</h3>
-                        <p>Desde enero de 2026, el Reglamento de IA de la UE exige auditorías obligatorias para sistemas de IA usados en salud, justicia y empleo. Las empresas que incumplan enfrentan multas de hasta el 6% de su facturación global.</p>
-                        <div class="severidad-wrap">
-                            <span class="severidad-label">Relevancia</span>
-                            <div class="severidad-barra-bg">
-                                <div class="severidad-barra" style="width:71%; background:linear-gradient(90deg,#f5c518,#ff6b35);"></div>
-                            </div>
-                            <span class="severidad-label" style="color:#f5c518;">71%</span>
-                        </div>
-                        <div class="noticia-footer" style="margin-top:.9rem;">
-                            <span class="noticia-meta">📅 15 ene 2026</span>
-                            <a href="https://news.google.com/articles/CBMiQWh0dHA6Ly93d3cudGFrdGEuY29tL2ludGVsaWdlbnRpYS1hcnRpZmljaWFsL2dwdC01LXN1cGVyYS1iZW5jaG1hcmsgaGF1bG9zLW5vLW5lZ2F0aXZvcy8wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD Aw" class="noticia-fuente" target="_blank">Fuente: Google News</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div><!-- /row -->
-    </section>
+        </div>
+    </div>
 </main>
 
-<footer>
-    <p>© 2026 AlertaTech News</p>
+<footer class="bg-dark text-secondary text-center py-3 border-top border-secondary">
+    <div class="container">
+        <small>© 2026 AlertaTech News</small>
+    </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/app.js"></script>
-<script src="js/search.js"></script>
-<script src="js/darkmode.js"></script>
-<script src="noticias/ia.js"></script>
 </body>
-</html> 
+</html>

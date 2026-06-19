@@ -159,3 +159,10 @@ body.modo-oscuro section {
     width: 120px !important; /* Añadimos !important aquí también */
     padding: 0 5px !important;
 }
+body{
+    background-image: url("/img/blue.jpg");;
+}
+/* Esto hace que aparezca la manito (puntero) en todo el menú */
+.nav-link, .dropdown-item {
+    cursor: pointer !important;
+}

@@ -2,112 +2,181 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estafas Digitales | AlertaTech News</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
-<body>
+<body class="bg-dark text-white">
 
-<header>
-    <h1>Estafas Digitales</h1>
-    <nav class="d-flex justify-content-center flex-wrap gap-3">
-        <a href="index.html">Inicio</a>
-        <a href="noticias.html">Noticias</a>
-        <a href="estafas.html">Estafas Digitales</a>
-        <a href="ciberseguridad.html">Ciberseguridad</a>
-        <a href="ia.html">Inteligencia Artificial</a>
-        <a href="contacto.html">Contacto</a>
-        <button id="boton-oscuro" class="nav-btn-oscuro">🌙</button>
-        <div class="input-group input-group-sm" style="width: 180px;">
-    <input type="text" class="form-control bg-transparent text-white border-secondary" placeholder="Buscar...">
-    <button class="btn btn-outline-secondary text-white border-secondary" type="button">
-        <i class="bi bi-search"></i>
-    </button>
-</div>
+<header class="text-center">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">news</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tecnologia.html">tecnología</a></li>
+                    <li class="nav-item"><a class="nav-link" href="investigaciones.html">investigaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="podcast.html">podcast</a></li>
+                    <li class="nav-item"><a class="nav-link" href="entrevistas.html">entrevistas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="geopolitica.html">geopolítica</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">otros</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="seguridad.html">Seguridad</a></li>
+                            <li><a class="dropdown-item" href="privacidad.html">Privacidad</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="legal.html">Legal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar">
+                    <button class="btn btn-outline-success" type="submit">buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-dark text-white py-4">
+        <h1 class="display-5 fw-bold">AlertaTech News</h1>
+        <p class="text-secondary">Noticias sobre tecnología, ciberseguridad, inteligencia artificial y prevención de estafas digitales.</p>
+    </div>
+
+    <nav class="navbar navbar-expand bg-dark border-top border-secondary py-2">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav d-flex flex-wrap justify-content-center align-items-center gap-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Inicio</a>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                        <li><a class="dropdown-item text-white-50" href="index.html">🏠 Principal</a></li>
+                        <li><a class="dropdown-item text-white-50" href="noticias.html">📊 Últimas noticias</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Noticias</a>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                        <li><a class="dropdown-item text-white-50" href="noticias.html">📰 Todas</a></li>
+                        <li><hr class="dropdown-divider border-secondary"></li>
+                        <li><a class="dropdown-item text-white-50" href="noticias.html#malware">🦠 Malware</a></li>
+                        <li><a class="dropdown-item text-white-50" href="noticias.html#ransomware">🔒 Ransomware</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Estafas Digitales</a>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                        <li><a class="dropdown-item text-white-50" href="estafas.html">📱 Todas</a></li>
+                        <li><hr class="dropdown-divider border-secondary"></li>
+                        <li><a class="dropdown-item text-white-50" href="estafas.html#phishing">📱 Phishing</a></li>
+                        <li><a class="dropdown-item text-white-50" href="estafas.html#smishing">💳 Smishing</a></li>
+                        <li><a class="dropdown-item text-white-50" href="estafas.html#vishing">🎙️ Vishing</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Ciberseguridad</a>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html">🔒 Todas</a></li>
+                        <li><hr class="dropdown-divider border-secondary"></li>
+                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html#firewalls">🛡️ Firewalls</a></li>
+                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html#encriptacion">🔐 Encriptación</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Inteligencia Artificial</a>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                        <li><a class="dropdown-item text-white-50" href="ia.html">🤖 Todas</a></li>
+                        <li><hr class="dropdown-divider border-secondary"></li>
+                        <li><a class="dropdown-item text-white-50" href="ia.html#machine-learning">🤖 Machine Learning</a></li>
+                        <li><a class="dropdown-item text-white-50" href="ia.html#deepfakes">🎙️ Deepfakes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white p-0" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
 
-<main>
-
-  <section class="hero">
-    <h2>⚠️ Prevención de fraudes tecnológicos</h2>
-    <p>Aprende a identificar estafas digitales, phishing, enlaces falsos, robo de identidad y amenazas online.</p>
-  </section>
-
-  <section>
-    <h2>🎣 Tipos de estafas digitales</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>📧 Phishing</h3>
-        <p>Correos falsos que imitan bancos o empresas para robar tus contraseñas y datos bancarios.</p>
-      </div>
-      <div class="card">
-        <h3>📱 Smishing</h3>
-        <p>SMS fraudulentos con enlaces maliciosos. Te piden datos urgentes haciéndose pasar por tu banco.</p>
-      </div>
-      <div class="card">
-        <h3>📞 Vishing</h3>
-        <p>Llamadas falsas donde se hacen pasar por soporte técnico o tu banco para robarte información.</p>
-      </div>
-      <div class="card">
-        <h3>🎭 Deepfake</h3>
-        <p>Videos o audios falsos generados con IA que suplantan la identidad de personas reales para estafar.</p>
-      </div>
-      <div class="card">
-        <h3>💰 Fraude con criptomonedas</h3>
-        <p>Inversiones falsas que prometen ganancias enormes y desaparecen con tu dinero sin dejar rastro.</p>
-      </div>
-      <div class="card">
-        <h3>💼 Falsas ofertas de trabajo</h3>
-        <p>Ofertas atractivas que piden dinero por adelantado o tus datos personales antes de empezar.</p>
-      </div>
-      <div class="card">
-        <h3>❤️ Romance Scam</h3>
-        <p>Perfiles falsos en redes o apps de citas que ganan tu confianza y luego te piden dinero.</p>
-      </div>
-      <div class="card">
-        <h3>🛒 Tiendas falsas online</h3>
-        <p>Sitios web con precios muy bajos que cobran pero nunca envían el producto o envían uno falso.</p>
-      </div>
-      <div class="card">
-        <h3>📲 SIM Swapping</h3>
-        <p>Roban tu número de teléfono convenciendo a tu operadora para acceder a tus cuentas bancarias.</p>
-      </div>
+<!-- CONTENIDO DE ESTAFAS -->
+<main class="container py-5">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="display-4 fw-bold">Estafas Digitales</h1>
+            <p class="text-secondary lead">Conoce las estafas más comunes y cómo protegerte</p>
+            <hr class="border-secondary">
+        </div>
     </div>
-  </section>
 
-  <section>
-    <h2>🚨 Señales de alerta</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>⏰ Urgencia extrema</h3>
-        <p>Si algo te pide actuar "ahora mismo" o "en las próximas horas", es una señal clara de estafa.</p>
-      </div>
-      <div class="card">
-        <h3>🎁 Ofertas increíbles</h3>
-        <p>Si parece demasiado bueno para ser verdad, probablemente lo es. Desconfía de premios inesperados.</p>
-      </div>
-      <div class="card">
-        <h3>🔗 Enlaces sospechosos</h3>
-        <p>Pasa el cursor sobre el enlace antes de hacer clic. Si la URL es rara o larga, no la abras.</p>
-      </div>
-      <div class="card">
-        <h3>💳 Piden datos bancarios</h3>
-        <p>Ninguna empresa legítima te pedirá tu número de tarjeta o contraseña por email o teléfono.</p>
-      </div>
+    <!-- PHISHING -->
+    <div id="phishing" class="row mt-4 pt-3 border-top border-secondary">
+        <div class="col-12">
+            <span class="badge bg-danger mb-2">🔴 Crítico</span>
+            <h2 class="h3">Phishing: La estafa que sigue evolucionando</h2>
+            <p class="text-secondary">Los ciberdelincuentes utilizan técnicas cada vez más sofisticadas para engañar a las víctimas</p>
+            <div class="bg-dark border border-secondary rounded p-4">
+                <p>El phishing es un tipo de estafa cibernética donde los atacantes se hacen pasar por entidades legítimas para robar información sensible como contraseñas, números de tarjetas de crédito y datos personales.</p>
+                <h5 class="mt-3">Técnicas comunes de phishing:</h5>
+                <ul>
+                    <li><strong>Correos electrónicos falsos:</strong> Simulan ser de bancos, empresas o servicios conocidos</li>
+                    <li><strong>Sitios web clonados:</strong> Páginas idénticas a las originales para capturar credenciales</li>
+                    <li><strong>Mensajes SMS (Smishing):</strong> Textos fraudulentos que piden acción inmediata</li>
+                    <li><strong>Llamadas telefónicas (Vishing):</strong> Suplantación de identidad por teléfono</li>
+                </ul>
+                <div class="alert alert-danger mt-3">
+                    ⚠️ Nunca compartas tus contraseñas por correo electrónico y verifica siempre el remitente
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
 
+    <!-- SMISHING -->
+    <div id="smishing" class="row mt-5 pt-3 border-top border-secondary">
+        <div class="col-12">
+            <span class="badge bg-warning text-dark mb-2">🟡 Medio</span>
+            <h2 class="h3">Smishing: Estafas por SMS</h2>
+            <p class="text-secondary">Los estafadores utilizan mensajes de texto para engañar a las víctimas</p>
+            <div class="bg-dark border border-secondary rounded p-4">
+                <p>El smishing es una variante del phishing que utiliza mensajes SMS para engañar a las víctimas. Los atacantes envían mensajes que parecen ser de bancos, empresas de mensajería o servicios oficiales.</p>
+                <h5 class="mt-3">Cómo detectar smishing:</h5>
+                <ul>
+                    <li>Revisa siempre el número de teléfono del remitente</li>
+                    <li>No hagas clic en enlaces sospechosos en mensajes</li>
+                    <li>Las entidades legítimas nunca piden datos personales por SMS</li>
+                    <li>Desconfía de mensajes que generan urgencia o miedo</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- VISHING -->
+    <div id="vishing" class="row mt-5 pt-3 border-top border-secondary">
+        <div class="col-12">
+            <span class="badge bg-info text-dark mb-2">🔵 Informativo</span>
+            <h2 class="h3">Vishing: Estafas telefónicas</h2>
+            <p class="text-secondary">Suplantación de identidad por teléfono para robar información</p>
+            <div class="bg-dark border border-secondary rounded p-4">
+                <p>El vishing utiliza llamadas telefónicas para engañar a las víctimas. Los estafadores se hacen pasar por empleados de bancos, empresas de tecnología o autoridades.</p>
+                <h5 class="mt-3">Consejos de protección contra vishing:</h5>
+                <ul>
+                    <li>Nunca compartas información personal por teléfono</li>
+                    <li>Cuelga y llama directamente a la entidad oficial</li>
+                    <li>Desconfía de llamadas que piden acción inmediata</li>
+                    <li>Verifica la identidad del interlocutor</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </main>
 
-<footer>
-    <p>© 2026 AlertaTech News</p>
+<footer class="bg-dark text-secondary text-center py-3 border-top border-secondary">
+    <div class="container">
+        <small>© 2026 AlertaTech News</small>
+    </div>
 </footer>
-<script src="js/app.js"></script>
-<script src="js/search.js"></script>
-<script src="js/darkmode.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

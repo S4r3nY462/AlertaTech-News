@@ -2,100 +2,234 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciberseguridad | AlertaTech News</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
-<body>
+<body class="bg-dark text-white">
 
 <header class="text-center">
-    <h1>Ciberseguridad</h1>
-  <nav class="d-flex justify-content-center flex-wrap gap-3">
-        <a href="index.html">Inicio</a>
-        <a href="noticias.html">Noticias</a>
-        <a href="estafas.html">Estafas Digitales</a>
-        <a href="ciberseguridad.html">Ciberseguridad</a>
-        <a href="ia.html">Inteligencia Artificial</a>
-        <a href="contacto.html">Contacto</a>
-        <button id="boton-oscuro" class="nav-btn-oscuro">🌙</button>
-        <div class="input-group input-group-sm" style="width: 180px;">
-    <input type="text" class="form-control bg-transparent text-white border-secondary" placeholder="Buscar...">
-    <button class="btn btn-outline-secondary text-white border-secondary" type="button">
-        <i class="bi bi-search"></i>
-    </button>
-</div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">news</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tecnologia.html">tecnología</a></li>
+                    <li class="nav-item"><a class="nav-link" href="investigaciones.html">investigaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="podcast.html">podcast</a></li>
+                    <li class="nav-item"><a class="nav-link" href="entrevistas.html">entrevistas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="geopolitica.html">geopolítica</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">otros</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="seguridad.html">Seguridad</a></li>
+                            <li><a class="dropdown-item" href="privacidad.html">Privacidad</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="legal.html">Legal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar">
+                    <button class="btn btn-outline-success" type="submit">buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-dark text-white py-4">
+        <h1 class="display-5 fw-bold">AlertaTech News</h1>
+        <p class="text-secondary">Noticias sobre tecnología, ciberseguridad, inteligencia artificial y prevención de estafas digitales.</p>
+    </div>
+
+    <nav class="navbar navbar-expand bg-dark border-top border-secondary py-2">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav d-flex flex-wrap justify-content-center align-items-center gap-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Inicio</a>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                        <li><a class="dropdown-item text-white-50" href="index.html">🏠 Principal</a></li>
+                        <li><a class="dropdown-item text-white-50" href="noticias.html">📊 Últimas noticias</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Noticias</a>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                        <li><a class="dropdown-item text-white-50" href="noticias.html">📰 Todas</a></li>
+                        <li><hr class="dropdown-divider border-secondary"></li>
+                        <li><a class="dropdown-item text-white-50" href="noticias.html#malware">🦠 Malware</a></li>
+                        <li><a class="dropdown-item text-white-50" href="noticias.html#ransomware">🔒 Ransomware</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Estafas Digitales</a>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                        <li><a class="dropdown-item text-white-50" href="estafas.html">📱 Todas</a></li>
+                        <li><hr class="dropdown-divider border-secondary"></li>
+                        <li><a class="dropdown-item text-white-50" href="estafas.html#phishing">📱 Phishing</a></li>
+                        <li><a class="dropdown-item text-white-50" href="estafas.html#smishing">💳 Smishing</a></li>
+                        <li><a class="dropdown-item text-white-50" href="estafas.html#vishing">🎙️ Vishing</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Ciberseguridad</a>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html">🔒 Todas</a></li>
+                        <li><hr class="dropdown-divider border-secondary"></li>
+                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html#firewalls">🛡️ Firewalls</a></li>
+                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html#encriptacion">🔐 Encriptación</a></li>
+                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html#hacking-etico">👨‍💻 Hacking ético</a></li>
+                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html#seguridad-nube">☁️ Seguridad en la nube</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Inteligencia Artificial</a>
+                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+                        <li><a class="dropdown-item text-white-50" href="ia.html">🤖 Todas</a></li>
+                        <li><hr class="dropdown-divider border-secondary"></li>
+                        <li><a class="dropdown-item text-white-50" href="ia.html#machine-learning">🤖 Machine Learning</a></li>
+                        <li><a class="dropdown-item text-white-50" href="ia.html#deepfakes">🎙️ Deepfakes</a></li>
+                        <li><a class="dropdown-item text-white-50" href="ia.html#chatbots">💬 Chatbots</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white p-0" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
 
-<main>
-
-  <section class="hero">
-    <h2>🛡️ Protección digital moderna</h2>
-    <p>Conoce las herramientas y buenas prácticas para proteger tu información y dispositivos contra amenazas digitales.</p>
-  </section>
-
-  <section>
-    <h2>🔧 Herramientas de ciberseguridad</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>🦠 Antivirus</h3>
-        <p>Instala un antivirus actualizado. Detecta y elimina virus, malware y spyware antes de que dañen tu dispositivo.</p>
-      </div>
-      <div class="card">
-        <h3>🔒 VPN</h3>
-        <p>Una red privada virtual cifra tu conexión. Úsala siempre en WiFi públicas para evitar que roben tus datos.</p>
-      </div>
-      <div class="card">
-        <h3>📱 Autenticación 2FA</h3>
-        <p>Añade una segunda capa de seguridad. Aunque roben tu contraseña, no podrán entrar sin tu teléfono.</p>
-      </div>
-      <div class="card">
-        <h3>🔑 Gestor de contraseñas</h3>
-        <p>Usa Bitwarden o similar para guardar contraseñas únicas y seguras sin tener que memorizarlas todas.</p>
-      </div>
-      <div class="card">
-        <h3>💾 Copias de seguridad</h3>
-        <p>Haz backups periódicos de tus archivos. Si te atacan con ransomware, podrás recuperar todo sin pagar.</p>
-      </div>
-      <div class="card">
-        <h3>🌐 Navegación segura</h3>
-        <p>Verifica que los sitios usen HTTPS. Evita descargar archivos de fuentes desconocidas o no confiables.</p>
-      </div>
+<!-- CONTENIDO DE CIBERSEGURIDAD -->
+<main class="container py-5">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="display-4 fw-bold">Ciberseguridad</h1>
+            <p class="text-secondary lead">Protege tu información y mantente seguro en el mundo digital</p>
+            <hr class="border-secondary">
+        </div>
     </div>
-  </section>
 
-  <section>
-    <h2>✅ Buenas prácticas digitales</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>🔐 Contraseñas fuertes</h3>
-        <p>Usa al menos 12 caracteres con letras, números y símbolos. Nunca repitas la misma contraseña en dos sitios.</p>
-      </div>
-      <div class="card">
-        <h3>📧 Cuidado con los emails</h3>
-        <p>No hagas clic en enlaces de correos sospechosos. Verifica siempre el remitente antes de abrir adjuntos.</p>
-      </div>
-      <div class="card">
-        <h3>📲 Permisos de apps</h3>
-        <p>Revisa qué permisos piden las aplicaciones. Una linterna no necesita acceso a tus contactos o ubicación.</p>
-      </div>
-      <div class="card">
-        <h3>🔄 Actualizaciones</h3>
-        <p>Mantén tu sistema y apps siempre actualizados. Las actualizaciones corrigen vulnerabilidades de seguridad.</p>
-      </div>
+    <!-- FIREWALLS -->
+    <div id="firewalls" class="row mt-4 pt-3 border-top border-secondary">
+        <div class="col-12">
+            <span class="badge bg-success mb-2">🟢 Informativo</span>
+            <h2 class="h3">Firewalls: Tu primera línea de defensa</h2>
+            <p class="text-secondary">Protegen tu red bloqueando accesos no autorizados</p>
+            <div class="bg-dark border border-secondary rounded p-4">
+                <p>Los firewalls son sistemas de seguridad que controlan el tráfico de red entrante y saliente. Actúan como una barrera entre tu red interna y el exterior.</p>
+                <h5 class="mt-3">Tipos de firewalls:</h5>
+                <ul>
+                    <li><strong>Firewalls de hardware:</strong> Dispositivos físicos que protegen toda la red</li>
+                    <li><strong>Firewalls de software:</strong> Programas instalados en cada computadora</li>
+                    <li><strong>Firewalls en la nube:</strong> Protección para aplicaciones y servidores en la nube</li>
+                    <li><strong>Firewalls de próxima generación (NGFW):</strong> Incluyen inspección profunda de paquetes</li>
+                </ul>
+                <h5 class="mt-3">Beneficios:</h5>
+                <ul>
+                    <li>Bloquea accesos no autorizados</li>
+                    <li>Previene ataques de malware</li>
+                    <li>Monitorea el tráfico de red</li>
+                    <li>Protege contra intrusiones</li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </section>
 
+    <!-- ENCRIPTACIÓN -->
+    <div id="encriptacion" class="row mt-5 pt-3 border-top border-secondary">
+        <div class="col-12">
+            <span class="badge bg-primary mb-2">🔵 Informativo</span>
+            <h2 class="h3">Encriptación: Protege tus datos</h2>
+            <p class="text-secondary">Convierte tu información en código ilegible para los atacantes</p>
+            <div class="bg-dark border border-secondary rounded p-4">
+                <p>La encriptación convierte los datos en un código que solo puede ser descifrado con una clave. Es esencial para proteger información sensible en tránsito y en reposo.</p>
+                <h5 class="mt-3">Tipos de encriptación:</h5>
+                <ul>
+                    <li><strong>Simétrica:</strong> Misma clave para cifrar y descifrar (AES, DES)</li>
+                    <li><strong>Asimétrica:</strong> Clave pública y privada (RSA, ECC)</li>
+                    <li><strong>SSL/TLS:</strong> Protege las comunicaciones en internet</li>
+                    <li><strong>Encriptación de extremo a extremo:</strong> WhatsApp, Signal</li>
+                </ul>
+                <h5 class="mt-3">Dónde se usa:</h5>
+                <ul>
+                    <li>Transacciones bancarias en línea</li>
+                    <li>Almacenamiento en la nube</li>
+                    <li>Correos electrónicos confidenciales</li>
+                    <li>Dispositivos móviles y computadoras</li>
+                </ul>
+                <div class="alert alert-info mt-3">
+                    💡 La encriptación AES-256 es el estándar utilizado por gobiernos y bancos a nivel mundial
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HACKING ÉTICO -->
+    <div id="hacking-etico" class="row mt-5 pt-3 border-top border-secondary">
+        <div class="col-12">
+            <span class="badge bg-info text-dark mb-2">🔵 Informativo</span>
+            <h2 class="h3">Hacking Ético: Los guardianes de la seguridad</h2>
+            <p class="text-secondary">Profesionales que prueban sistemas para encontrar vulnerabilidades</p>
+            <div class="bg-dark border border-secondary rounded p-4">
+                <p>El hacking ético consiste en probar sistemas de seguridad con autorización para encontrar vulnerabilidades antes de que los atacantes las exploten.</p>
+                <h5 class="mt-3">Certificaciones reconocidas:</h5>
+                <ul>
+                    <li><strong>CEH (Certified Ethical Hacker):</strong> La más reconocida</li>
+                    <li><strong>OSCP (Offensive Security Certified Professional):</strong> Enfoque práctico</li>
+                    <li><strong>CompTIA Security+:</strong> Fundamentos de seguridad</li>
+                    <li><strong>GPEN (GIAC Penetration Tester):</strong> Especializada en pruebas</li>
+                </ul>
+                <h5 class="mt-3">Tipos de pruebas:</h5>
+                <ul>
+                    <li><strong>Pruebas de penetración (Pentesting):</strong> Simulan ataques reales</li>
+                    <li><strong>Análisis de vulnerabilidades:</strong> Escanean sistemas en busca de fallos</li>
+                    <li><strong>Ingeniería social:</strong> Prueban la conciencia de los empleados</li>
+                    <li><strong>Pruebas de aplicaciones web:</strong> Buscan fallos en sitios y APIs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEGURIDAD EN LA NUBE -->
+    <div id="seguridad-nube" class="row mt-5 pt-3 border-top border-secondary">
+        <div class="col-12">
+            <span class="badge bg-warning text-dark mb-2">🟡 Medio</span>
+            <h2 class="h3">Seguridad en la Nube: Protege tus datos en la nube</h2>
+            <p class="text-secondary">La migración a la nube requiere estrategias de seguridad específicas</p>
+            <div class="bg-dark border border-secondary rounded p-4">
+                <p>La seguridad en la nube es un conjunto de políticas, controles y tecnologías diseñadas para proteger datos, aplicaciones y servicios alojados en la nube.</p>
+                <h5 class="mt-3">Principales desafíos:</h5>
+                <ul>
+                    <li><strong>Control de acceso:</strong> Gestionar quién accede a qué</li>
+                    <li><strong>Protección de datos:</strong> Encriptación y copias de seguridad</li>
+                    <li><strong>Conformidad normativa:</strong> GDPR, HIPAA, PCI DSS</li>
+                    <li><strong>Configuración errónea:</strong> La principal causa de brechas</li>
+                </ul>
+                <h5 class="mt-3">Mejores prácticas:</h5>
+                <ul>
+                    <li>Habilitar autenticación multifactor (MFA)</li>
+                    <li>Usar encriptación para datos en reposo y en tránsito</li>
+                    <li>Realizar auditorías de seguridad periódicas</li>
+                    <li>Implementar el principio de menor privilegio</li>
+                </ul>
+                <div class="alert alert-warning mt-3">
+                    ⚠️ Más del 80% de las brechas en la nube son causadas por configuraciones incorrectas
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
-<footer>
-    <p>© 2026 AlertaTech News</p>
+<footer class="bg-dark text-secondary text-center py-3 border-top border-secondary">
+    <div class="container">
+        <small>© 2026 AlertaTech News</small>
+    </div>
 </footer>
-<script src="js/app.js"></script>
-<script src="js/search.js"></script>
-<script src="js/darkmode.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
