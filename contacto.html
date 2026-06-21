@@ -6,8 +6,11 @@
     <title>Contacto | AlertaTech News</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body class="bg-dark text-white">
+<body>
 
 <header class="text-center">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -118,7 +121,7 @@
 <!-- CONTENIDO DE CONTACTO -->
 <main class="container py-5">
     <div class="row justify-content-center">
-        <div class="col-12 col-lg-8 col-xl-6>
+        <div class="col-12 col-lg-8 col-xl-6">
             <h1 class="display-4 fw-bold text-center">Contacto</h1>
             <p class="text-secondary lead text-center">¿Tienes alguna pregunta o sugerencia? Contáctanos</p>
             <hr class="border-secondary">
@@ -126,15 +129,15 @@
             <form class="mt-4">
                 <div class="mb-3">
                     <label for="nombre" class="form-label text-secondary">Nombre completo</label>
-                    <input type="text" class="form-control bg-dark text-white border-secondary" id="nombre" placeholder="Tu nombre">
+                    <input type="text" class="form-control border" id="nombre" placeholder="Tu nombre">
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label text-secondary">Correo electrónico</label>
-                    <input type="email" class="form-control bg-dark text-white border-secondary" id="email" placeholder="tucorreo@email.com">
+                    <input type="email" class="form-control border" id="email" placeholder="tucorreo@email.com">
                 </div>
                 <div class="mb-3">
                     <label for="asunto" class="form-label text-secondary">Asunto</label>
-                    <select class="form-select bg-dark text-white border-secondary" id="asunto">
+                    <select class="form-select border" id="asunto">
                         <option value="">Selecciona un asunto</option>
                         <option value="sugerencia">Sugerencia</option>
                         <option value="noticia">Reportar noticia</option>
@@ -144,7 +147,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="mensaje" class="form-label text-secondary">Mensaje</label>
-                    <textarea class="form-control bg-dark text-white border-secondary" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    <textarea class="form-control border" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
                 </div>
                 <button type="submit" class="btn btn-success w-100">Enviar mensaje</button>
             </form>
