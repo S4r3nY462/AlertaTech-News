@@ -10,97 +10,118 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body class="bg-black text-white">
 
 <header class="text-center">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">news</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html">inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tecnologia.html">tecnología</a></li>
-                    <li class="nav-item"><a class="nav-link" href="investigaciones.html">investigaciones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="podcast.html">podcast</a></li>
-                    <li class="nav-item"><a class="nav-link" href="entrevistas.html">entrevistas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="geopolitica.html">geopolítica</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">otros</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="seguridad.html">Seguridad</a></li>
-                            <li><a class="dropdown-item" href="privacidad.html">Privacidad</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="legal.html">Legal</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar">
-                    <button class="btn btn-outline-success" type="submit">buscar</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute top-0 start-0 w-100" style="z-index: 3;">
+  <div class="container-fluid px-4 px-lg-5 py-3">
 
-    <div class="bg-dark text-white py-4">
+    <!-- Tu marca original a la izquierda -->
+    <a class="navbar-brand fw-bold fs-4 text-uppercase text-white" href="index.html">news</a>
+
+    <!-- Botón de celular responsivo -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" 
+            aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenedor de enlaces: Estilo SpaceX minimalista pero con tus carpetas -->
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto text-uppercase align-items-lg-center gap-2" style="font-size: 0.75rem; letter-spacing: 1px;">
+        
+        
+
+        <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-semibold px-2 text-white-50" href="#" id="dropEstafas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        noticias
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark rounded-3 shadow border-0 mt-2" aria-labelledby="dropEstafas" style="font-size: 0.85rem;">
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="estafas.html"><i class="bi bi-grid-fill text-muted me-2"></i> Todas</a></li>
+            <li><hr class="dropdown-divider border-secondary"></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="noticias.html#malware"><i class="bi bi-envelope-open-fill text-danger me-2"></i> malware</a></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="noticias.html#ransomware"><i class="bi bi-chat-left-text-fill text-info me-2"></i> ransomware</a></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="noticias.html#seguridad-redes"><i class="bi bi-telephone-inbound-fill text-success me-2"></i> seguridad en redes</a></li>
+          </ul>
+        </li>
+        <!-- Dropdown 1: Estafas Digitales con Iconos Pro -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-semibold px-2 text-white-50" href="#" id="dropEstafas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Estafas Digitales
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark rounded-3 shadow border-0 mt-2" aria-labelledby="dropEstafas" style="font-size: 0.85rem;">
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="estafas.html"><i class="bi bi-grid-fill text-muted me-2"></i> Todas</a></li>
+            <li><hr class="dropdown-divider border-secondary"></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="estafas.html#phishing"><i class="bi bi-envelope-open-fill text-danger me-2"></i> Phishing</a></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="estafas.html#smishing"><i class="bi bi-chat-left-text-fill text-info me-2"></i> Smishing</a></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="estafas.html#vishing"><i class="bi bi-telephone-inbound-fill text-success me-2"></i> Vishing</a></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="estafas.html#robo-identidad"><i class="bi bi-person-bounding-box text-warning me-2"></i> Robo de identidad</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown 2: Ciberseguridad con Iconos Pro -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-semibold px-2 text-white-50" href="#" id="dropCiber" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ciberseguridad
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark rounded-3 shadow border-0 mt-2" aria-labelledby="dropCiber" style="font-size: 0.85rem;">
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="ciberseguridad.html"><i class="bi bi-shield-lock-fill text-muted me-2"></i> Todas</a></li>
+            <li><hr class="dropdown-divider border-secondary"></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="ciberseguridad.html#firewalls"><i class="bi bi-shield-shaded text-danger me-2"></i> Firewalls</a></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="ciberseguridad.html#encriptacion"><i class="bi bi-key-fill text-warning me-2"></i> Encriptación</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown 3: Inteligencia Artificial con Iconos Pro -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-semibold px-2 text-white-50" href="#" id="dropIA" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Inteligencia Artificial
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark rounded-3 shadow border-0 mt-2" aria-labelledby="dropIA" style="font-size: 0.85rem;">
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="ia.html"><i class="bi bi-cpu-fill text-muted me-2"></i> Todas</a></li>
+            <li><hr class="dropdown-divider border-secondary"></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="ia.html#machine-learning"><i class="bi bi-robot text-info me-2"></i> Machine Learning</a></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="ia.html#deepfakes"><i class="bi bi-mic-fill text-danger me-2"></i> Deepfakes</a></li>
+          </ul>
+        </li>
+
+    
+        <li class="nav-item">
+          <a class="nav-link fw-semibold px-2 text-white-50" href="tecnologia.html">Tecnología</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold px-2 text-white-50" href="investigaciones.html">Investigaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold px-2 text-white-50" href="podcast.html">Podcast</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold px-2 text-white-50" href="entrevistas.html">Entrevistas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold px-2 text-white-50" href="geopolitica.html">Geopolítica</a>
+        </li>
+        <li class="nav-item me-lg-3">
+          <a class="nav-link fw-semibold px-2 text-white-50" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+
+      <!-- Tu Formulario de búsqueda original integrado al final de la barra -->
+      <form class="d-flex mt-3 mt-lg-0" role="search">
+        <label for="searchInput" class="visually-hidden">Buscar</label>
+        <input id="searchInput" class="form-control form-control-sm me-2 bg-transparent text-white border-secondary" type="search" placeholder="Buscar" aria-label="Buscar" style="font-size: 0.75rem;">
+        <button class="btn btn-sm btn-outline-light text-uppercase" type="submit" style="font-size: 0.7rem; letter-spacing: 1px;">Buscar</button>
+      </form>
+    </div>
+
+  </div>
+</nav>
+
+    <div class="bg-dark text-white py-5">
         <h1 class="display-5 fw-bold">AlertaTech News</h1>
         <p class="text-secondary">Noticias sobre tecnología, ciberseguridad, inteligencia artificial y prevención de estafas digitales.</p>
     </div>
 
-    <nav class="navbar navbar-expand bg-dark border-top border-secondary py-2">
-        <div class="container-fluid justify-content-center">
-            <ul class="navbar-nav d-flex flex-wrap justify-content-center align-items-center gap-3">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Inicio</a>
-                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
-                        <li><a class="dropdown-item text-white-50" href="index.html">🏠 Principal</a></li>
-                        <li><a class="dropdown-item text-white-50" href="noticias.html">📊 Últimas noticias</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Noticias</a>
-                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
-                        <li><a class="dropdown-item text-white-50" href="noticias.html">📰 Todas</a></li>
-                        <li><hr class="dropdown-divider border-secondary"></li>
-                        <li><a class="dropdown-item text-white-50" href="noticias.html#malware">🦠 Malware</a></li>
-                        <li><a class="dropdown-item text-white-50" href="noticias.html#ransomware">🔒 Ransomware</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Estafas Digitales</a>
-                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
-                        <li><a class="dropdown-item text-white-50" href="estafas.html">📱 Todas</a></li>
-                        <li><hr class="dropdown-divider border-secondary"></li>
-                        <li><a class="dropdown-item text-white-50" href="estafas.html#phishing">📱 Phishing</a></li>
-                        <li><a class="dropdown-item text-white-50" href="estafas.html#smishing">💳 Smishing</a></li>
-                        <li><a class="dropdown-item text-white-50" href="estafas.html#vishing">🎙️ Vishing</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Ciberseguridad</a>
-                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
-                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html">🔒 Todas</a></li>
-                        <li><hr class="dropdown-divider border-secondary"></li>
-                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html#firewalls">🛡️ Firewalls</a></li>
-                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html#encriptacion">🔐 Encriptación</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Inteligencia Artificial</a>
-                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
-                        <li><a class="dropdown-item text-white-50" href="ia.html">🤖 Todas</a></li>
-                        <li><hr class="dropdown-divider border-secondary"></li>
-                        <li><a class="dropdown-item text-white-50" href="ia.html#machine-learning">🤖 Machine Learning</a></li>
-                        <li><a class="dropdown-item text-white-50" href="ia.html#deepfakes">🎙️ Deepfakes</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link text-white p-0" href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
 </header>
 
 <!-- CONTENIDO DE ESTAFAS -->
@@ -174,9 +195,31 @@
     </div>
 </main>
 
-<footer class="bg-dark text-secondary text-center py-3 border-top border-secondary">
-    <div class="container">
-        <small>© 2026 AlertaTech News</small>
+<footer class="text-white py-1 m-0 p-0" style="background-color: #000000; font-size: 0.7rem; letter-spacing: 1px;">
+    <div class="container-fluid px-5">
+        <div class="row align-items-center gy-3">
+            
+            <!-- 1. ICONO IZQUIERDA -->
+            <div class="col-12 col-md-3 text-center text-md-start">
+                <a href="#" class="text-secondary text-decoration-none bg-dark rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
+
+            <!-- 2. ENLACES CENTRALES -->
+            <div class="col-12 col-md-6 d-flex justify-content-center flex-wrap gap-4 text-uppercase fw-semibold">
+                <a href="tecnologia.html" class="text-white text-decoration-none text-hover-white">Tecnología</a>
+                <a href="noticias.html" class="text-white text-decoration-none text-hover-white">Actualizaciones</a>
+                <a href="#" class="text-white text-decoration-none text-hover-white">Política de Privacidad</a>
+                <a href="contacto.html" class="text-white text-decoration-none text-hover-white">Contacto</a>
+            </div>
+
+            <!-- 3. COPYRIGHT DERECHA -->
+            <div class="col-12 col-md-3 text-center text-md-end text-uppercase fw-semibold text-white" style="font-size: 0.65rem;">
+              © 2026 AlertaTech News
+            </div>
+
+        </div>
     </div>
 </footer>
 

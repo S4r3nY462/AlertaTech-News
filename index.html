@@ -10,175 +10,412 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
-    <header class="text-center">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">news</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html">inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tecnologia.html">tecnología</a></li>
-                    <li class="nav-item"><a class="nav-link" href="investigaciones.html">investigaciones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="podcast.html">podcast</a></li>
-                    <li class="nav-item"><a class="nav-link" href="entrevistas.html">entrevistas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="geopolitica.html">geopolítica</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">otros</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="seguridad.html">Seguridad</a></li>
-                            <li><a class="dropdown-item" href="privacidad.html">Privacidad</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="legal.html">Legal</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar">
-                    <button class="btn btn-outline-success" type="submit">buscar</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+<body class="m-0 p-0 overflow-x-hidden">
+<header class="vh-100 position-relative overflow-hidden">
+      <video autoplay muted loop playsinline aria-hidden="true"
+                class="position-absolute top-0 start-0 w-100 h-100" 
+                style="object-fit: cover;">
+            <source src="video/vi.webm" type="video/mp4">
+          </video>
+          <div
+            class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25"
+            style="z-index: 1;">
+          </div>
 
-    <div class="bg-dark text-white py-4">
-        <h1 class="display-5 fw-bold">AlertaTech News</h1>
-        <p class="text-secondary">Noticias sobre tecnología, ciberseguridad, inteligencia artificial y prevención de estafas digitales.</p>
+  <!-- Barra de navegación fija (siempre visible) -->
+ <!-- MENÚ FUSIONADO: Estilo SpaceX transparente pero con tus enlaces reales -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute top-0 start-0 w-100" style="z-index: 3;">
+  <div class="container-fluid px-4 px-lg-5 py-3">
+
+    <!-- Tu marca original a la izquierda -->
+    <a class="navbar-brand fw-bold fs-4 text-uppercase text-white" href="index.html">news</a>
+
+    <!-- Botón de celular responsivo -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" 
+            aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenedor de enlaces: Estilo SpaceX minimalista pero con tus carpetas -->
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto text-uppercase align-items-lg-center gap-2" style="font-size: 0.75rem; letter-spacing: 1px;">
+        
+        
+
+        <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-semibold px-2 text-white-50" href="#" id="dropEstafas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        noticias
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark rounded-3 shadow border-0 mt-2" aria-labelledby="dropEstafas" style="font-size: 0.85rem;">
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="estafas.html"><i class="bi bi-grid-fill text-muted me-2"></i> Todas</a></li>
+            <li><hr class="dropdown-divider border-secondary"></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="noticias.html#malware"><i class="bi bi-envelope-open-fill text-danger me-2"></i> malware</a></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="noticias.html#ransomware"><i class="bi bi-chat-left-text-fill text-info me-2"></i> ransomware</a></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="noticias.html#seguridad-redes"><i class="bi bi-telephone-inbound-fill text-success me-2"></i> seguridad en redes</a></li>
+          </ul>
+        </li>
+        <!-- Dropdown 1: Estafas Digitales con Iconos Pro -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-semibold px-2 text-white-50" href="#" id="dropEstafas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Estafas Digitales
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark rounded-3 shadow border-0 mt-2" aria-labelledby="dropEstafas" style="font-size: 0.85rem;">
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="estafas.html"><i class="bi bi-grid-fill text-muted me-2"></i> Todas</a></li>
+            <li><hr class="dropdown-divider border-secondary"></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="estafas.html#phishing"><i class="bi bi-envelope-open-fill text-danger me-2"></i> Phishing</a></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="estafas.html#smishing"><i class="bi bi-chat-left-text-fill text-info me-2"></i> Smishing</a></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="estafas.html#vishing"><i class="bi bi-telephone-inbound-fill text-success me-2"></i> Vishing</a></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="estafas.html#robo-identidad"><i class="bi bi-person-bounding-box text-warning me-2"></i> Robo de identidad</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown 2: Ciberseguridad con Iconos Pro -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-semibold px-2 text-white-50" href="#" id="dropCiber" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ciberseguridad
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark rounded-3 shadow border-0 mt-2" aria-labelledby="dropCiber" style="font-size: 0.85rem;">
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="ciberseguridad.html"><i class="bi bi-shield-lock-fill text-muted me-2"></i> Todas</a></li>
+            <li><hr class="dropdown-divider border-secondary"></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="ciberseguridad.html#firewalls"><i class="bi bi-shield-shaded text-danger me-2"></i> Firewalls</a></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="ciberseguridad.html#encriptacion"><i class="bi bi-key-fill text-warning me-2"></i> Encriptación</a></li>
+          </ul>
+        </li>
+
+        <!-- Dropdown 3: Inteligencia Artificial con Iconos Pro -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-semibold px-2 text-white-50" href="#" id="dropIA" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Inteligencia Artificial
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark rounded-3 shadow border-0 mt-2" aria-labelledby="dropIA" style="font-size: 0.85rem;">
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="ia.html"><i class="bi bi-cpu-fill text-muted me-2"></i> Todas</a></li>
+            <li><hr class="dropdown-divider border-secondary"></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="ia.html#machine-learning"><i class="bi bi-robot text-info me-2"></i> Machine Learning</a></li>
+            <li><a class="dropdown-item py-2 d-flex align-items-center" href="ia.html#deepfakes"><i class="bi bi-mic-fill text-danger me-2"></i> Deepfakes</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fw-semibold px-2 text-white-50" href="tecnologia.html">Tecnología</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold px-2 text-white-50" href="investigaciones.html">Investigaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold px-2 text-white-50" href="podcast.html">Podcast</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold px-2 text-white-50" href="entrevistas.html">Entrevistas</a>
+        </li>
+        <li class="nav-item me-lg-3">
+          <a class="nav-link fw-semibold px-2 text-white-50" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+
+      <!-- Tu Formulario de búsqueda original integrado al final de la barra -->
+      <form class="d-flex mt-3 mt-lg-0" role="search">
+        <label for="searchInput" class="visually-hidden">Buscar</label>
+        <input id="searchInput" class="form-control form-control-sm me-2 bg-transparent text-white border-secondary" type="search" placeholder="Buscar" aria-label="Buscar" style="font-size: 0.75rem;">
+        <button class="btn btn-sm btn-outline-light text-uppercase" type="submit" style="font-size: 0.7rem; letter-spacing: 1px;">Buscar</button>
+      </form>
     </div>
 
-    <nav class="navbar navbar-expand bg-dark border-top border-secondary py-2">
-        <div class="container-fluid justify-content-center">
-            <ul class="navbar-nav d-flex flex-wrap justify-content-center align-items-center gap-3">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Inicio</a>
-                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
-                        <li><a class="dropdown-item text-white-50" href="index.html">🏠 Principal</a></li>
-                        <li><a class="dropdown-item text-white-50" href="noticias.html">📊 Últimas noticias</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Noticias</a>
-                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
-                        <li><a class="dropdown-item text-white-50" href="noticias.html">📰 Todas</a></li>
-                        <li><hr class="dropdown-divider border-secondary"></li>
-                        <li><a class="dropdown-item text-white-50" href="noticias.html#malware">🦠 Malware</a></li>
-                        <li><a class="dropdown-item text-white-50" href="noticias.html#ransomware">🔒 Ransomware</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Estafas Digitales</a>
-                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
-                        <li><a class="dropdown-item text-white-50" href="estafas.html">📱 Todas</a></li>
-                        <li><hr class="dropdown-divider border-secondary"></li>
-                        <li><a class="dropdown-item text-white-50" href="estafas.html#phishing">📱 Phishing</a></li>
-                        <li><a class="dropdown-item text-white-50" href="estafas.html#smishing">💳 Smishing</a></li>
-                        <li><a class="dropdown-item text-white-50" href="estafas.html#vishing">🎙️ Vishing</a></li>
-                        <li><a class="dropdown-item text-white-50" href="estafas.html#robo-identidad">🕵️ Robo de identidad</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Ciberseguridad</a>
-                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
-                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html">🔒 Todas</a></li>
-                        <li><hr class="dropdown-divider border-secondary"></li>
-                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html#firewalls">🛡️ Firewalls</a></li>
-                        <li><a class="dropdown-item text-white-50" href="ciberseguridad.html#encriptacion">🔐 Encriptación</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">Inteligencia Artificial</a>
-                    <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
-                        <li><a class="dropdown-item text-white-50" href="ia.html">🤖 Todas</a></li>
-                        <li><hr class="dropdown-divider border-secondary"></li>
-                        <li><a class="dropdown-item text-white-50" href="ia.html#machine-learning">🤖 Machine Learning</a></li>
-                        <li><a class="dropdown-item text-white-50" href="ia.html#deepfakes">🎙️ Deepfakes</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link text-white p-0" href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
+  </div>
+</nav>
+
+
+    
+
+    <div
+      class="position-relative d-flex flex-column justify-content-end align-items-start h-100 text-white px-4 px-lg-5 pb-5"
+      style="z-index: 2;"
+    >
+      <!-- Fecha pequeña en mayúsculas -->
+      <p class="text-uppercase small fw-light mb-2 ms-1 letter-spacing">
+        22 De Junio, 2026
+      </p>
+
+      <!-- Título principal gigante -->
+      <h1 class="display-1 fw-bold text-uppercase mb-4">
+        TECH NEWS
+      </h1>
+
+      <!-- Botón rectangular transparente con borde blanco -->
+      <a href="#" class="btn btn-outline-light rounded-0 px-4 py-2 text-uppercase">
+        aprende mas &rarr;
+      </a>
+    </div>
 </header>
 
 <!-- CONTENIDO PRINCIPAL -->
+    <main class="w-100 m-0 p-0 text-white">
+      <!-- SECCIÓN DEL CARRUSEL DE DIAGNÓSTICO -->
+<section class="container-fluid w-100 vw-100 m-0 p-0 position-relative" style="height: 100vh;">
 
-<main class="container my-5">
-
-    <section class="hero row align-items-center g-4">
-        <div class="col-12 col-lg-6">
-            <span class="badge bg-danger mb-3">Alerta digital</span>
-            <h2>Información digital para protegerte en un mundo conectado</h2>
-            <p>
-                Plataforma web informativa orientada a difundir noticias, alertas y recomendaciones sobre amenazas digitales,
-                nuevas técnicas de ciberseguridad y uso responsable de la inteligencia artificial.
+  <!-- CARRUSEL DE IMÁGENES DE FONDO (Cambia automáticamente) -->
+  <div id="carruselEntorno" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel" style="z-index: 0;">
+    <div class="carousel-inner h-100">
+      
+      <!-- Diapositiva 1: SOCIAL (Activa por defecto) -->
+      <div class="carousel-item active h-100">
+        <img src="img/social.jpg" class="d-block w-100 h-100" alt="Entorno Social" style="object-fit: cover;">
+        
+        <!-- Capa oscura transparente para leer bien el texto -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25"></div>
+        
+        <!-- Texto flotante de SOCIAL -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-5 pb-5">
+          <div class="ps-4" style="max-width: 650px;">
+            <h2 class="fw-bold text-uppercase display-3 mb-3 " style="color: #ececec;">Social</h2>
+            <p class="fs-5 fw-light lh-base mb-4 text-white">
+              Los usuarios usan más servicios digitales, pero muchos desconocen los riesgos de estafas online.
             </p>
-            <a href="estafas.html" class="btn btn-primary mt-3">Ver alertas recientes</a>
+            <a href="estafas.html" class="btn btn-outline-light text-uppercase fw-semibold rounded-0 px-4 py-2" style="font-size: 0.75rem; letter-spacing: 1px;">
+              Aprende más →
+            </a>
+          </div>
         </div>
-
-        <div class="col-12 col-lg-6">
-            <div class="ratio ratio-16x9">
-                <iframe 
-                    src="https://www.youtube.com/embed/dmrlfWp9bBc"
-                    title="Video introductorio sobre ciberseguridad"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen>
-                </iframe>
-            </div>
+      </div>
+      
+      <!-- Diapositiva 2: POLÍTICO -->
+      <div class="carousel-item h-100">
+        <img src="img/politico.webp" class="d-block w-100 h-100" alt="Entorno Político" style="object-fit: cover;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25"></div>
+        
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-5 pb-5">
+          <div class="ps-4" style="max-width: 650px;">
+            <h2 class="fw-bold text-uppercase display-3 mb-3 " style="color: #C2410C;">Político</h2>
+            <p class="fs-5 fw-light lh-base mb-4 text-white">
+              La transformación digital requiere normas, campañas y medidas contra delitos informáticos.
+            </p>
+            <a href="geopolitica.html" class="btn btn-outline-light text-uppercase fw-semibold rounded-0 px-4 py-2" style="font-size: 0.75rem; letter-spacing: 1px;">
+              Aprende más →
+            </a>
+          </div>
         </div>
-    </section>
+      </div>
+      
+      <!-- Diapositiva 3: ECONÓMICO -->
+      <div class="carousel-item h-100">
+        <img src="img/economico.jpg" class="d-block w-100 h-100" alt="Entorno Económico" style="object-fit: cover;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25"></div>
+        
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-5 pb-5">
+          <div class="ps-4" style="max-width: 650px;">
+            <h2 class="fw-bold text-uppercase display-3 mb-3" style="color: #064bec;">Económico</h2>
+            <p class="fs-5 fw-light lh-base mb-4">
+              Las estafas digitales generan pérdidas económicas en personas, empresas y entidades financieras.
+            </p>
+            <a href="investigaciones.html" class="btn btn-outline-light text-uppercase fw-semibold rounded-0 px-4 py-2" style="font-size: 0.75rem; letter-spacing: 1px;">
+              Aprende más →
+            </a>
+          </div>
+        </div>
+      </div>
 
-    <section class="my-5">
-    <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
-        <h2>Noticias destacadas</h2>
-        <a href="noticias.html" class="btn btn-outline-primary btn-sm">Ver todas</a>
+      <!-- Diapositiva 4: TECNOLÓGICO -->
+      <div class="carousel-item h-100">
+        <img src="img/tecnologico.jpg" class="d-block w-100 h-100" alt="Entorno Tecnológico" style="object-fit: cover;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25"></div>
+        
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-5 pb-5">
+          <div class="ps-4" style="max-width: 650px;">
+            <h2 class="fw-bold text-uppercase display-3 mb-3" style="color: crimson;">Tecnológico</h2>
+            <p class="fs-5 fw-light lh-base mb-4">
+              La IA, automatización y nuevas plataformas generan oportunidades, pero también nuevas amenazas.
+            </p>
+            <a href="tecnologia.html" class="btn btn-outline-light text-uppercase fw-semibold rounded-0 px-4 py-2" style="font-size: 0.75rem; letter-spacing: 1px;">
+              Aprende más →
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div id="news-container" class="row g-4"></div>
-    </section>
+    <!-- BOTONES DE CONTROL (Flechas izquierda y derecha para cambiar manualmente) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselEntorno" data-bs-slide="prev" 
+            style="z-index: 3; height: 60px; top: 50%; transform: translateY(-50%); width: 60px;">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
 
-       
-    <section class="my-5">
-        <h2 class="mb-4">Diagnóstico del entorno</h2>
+    <!-- BOTÓN SIGUIENTE (DERECHA) - Reducido en el centro -->
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselEntorno" data-bs-slide="next" 
+            style="z-index: 3; height: 60px; top: 50%; transform: translateY(-50%); width: 60px;">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
 
-        <div class="d-flex flex-wrap gap-3">
-            <article class="card flex-fill p-4">
-                <h3>Social</h3>
-                <p>Los usuarios usan más servicios digitales, pero muchos desconocen los riesgos de estafas online.</p>
-            </article>
+</section>
 
-            <article class="card flex-fill p-4">
-                <h3>Político</h3>
-                <p>La transformación digital requiere normas, campañas y medidas contra delitos informáticos.</p>
-            </article>
+<!-- Agregamos vw-100 (Viewport Width 100) para forzar el ancho total del monitor -->
+<section class="position-relative vh-100 vw-100 overflow-hidden w-100 m-0 p-0 text-white">
 
-            <article class="card flex-fill p-4">
-                <h3>Económico</h3>
-                <p>Las estafas digitales generan pérdidas económicas en personas, empresas y entidades financieras.</p>
-            </article>
 
-            <article class="card flex-fill p-4">
-                <h3>Tecnológico</h3>
-                <p>La IA, automatización y nuevas plataformas generan oportunidades, pero también nuevas amenazas.</p>
-            </article>
+  <!-- 1. IMAGEN DE FONDO DE ALTA CALIDAD -->
+  <!-- imagen -->
+  <img src="img/mañana.webp" alt="Lanzamiento Tecnológico" 
+       class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; z-index: 0;">
+  
+  <!-- Capa oscura  -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25" style="z-index: 1;"></div>
 
-            <article class="card flex-fill p-4">
-                <h3>Ecológico</h3>
-                <p>La tecnología también debe considerar consumo energético, residuos electrónicos y uso responsable.</p>
-            </article>
-        </div>
-    </section>
+  <!-- 2. TEXTOS ALINEADOS A LA DERECHA (justify-content-center y align-items-end) -->
+  <div class="position-relative w-100 h-100 d-flex flex-column justify-content-center align-items-end p-5 pe-lg-5" style="z-index: 2;">
+    <div class="pe-md-5 me-md-5 text-start" style="max-width: 600px;">
+      
+      <!-- Título de la noticia en mayúsculas sostenidas -->
+      <h2 class="fw-bold text-white text-uppercase display-4 mb-3 lh-1" style="letter-spacing: -1px;">
+        Descubriendo el mañana.
+      </h2>
+      
+      <!-- Párrafo descriptivo en color blanco suave -->
+      <p class="fs-6 fw-light lh-base mb-4 text-light">
+       Te mostramos los últimos avances en Inteligencia Artificial, los nuevos teléfonos que salen al mercado y cómo la ciencia está transformando nuestra vida diaria.
+      </p>
+
+      <!-- Botón rectangular transparente con borde blanco -->
+      <a href="tecnologia.html" class="btn btn-outline-light text-uppercase fw-semibold rounded-0 px-4 py-2" style="font-size: 0.75rem; letter-spacing: 1px;">
+        EXPLORAR NOTICIAS →
+      </a>
+      
+    </div>
+  </div>
+
+</section>
+<section class="position-relative vh-100 vw-100 overflow-hidden w-100 m-0 p-0 text-white">
+
+  <!-- 1. IMAGEN DE FONDO DE ALTA CALIDAD -->
+  <!-- Puedes buscar una foto de un cohete, satélite o un servidor en Pexels y llamarla cohete.jpg -->
+  <img src="img/lupa.webp" alt="Lanzamiento Tecnológico" 
+       class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; z-index: 0;">
+  
+  <!-- Capa oscura sutil para proteger el texto -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25" style="z-index: 1;"></div>
+
+  <!-- 2. TEXTOS ALINEADOS A LA DERECHA (justify-content-center y align-items-end) -->
+  <div class="position-relative w-100 h-100 d-flex flex-column justify-content-center align-items-end p-5 pe-lg-5" style="z-index: 2;">
+    <div class="pe-md-5 me-md-5 text-start" style="max-width: 600px;">
+      
+      <!-- Título de la noticia en mayúsculas sostenidas -->
+      <h2 class="fw-bold text-uppercase text-white display-4 mb-3 lh-1" style="letter-spacing: -1px;">
+         Verdad o mentira en la red
+      </h2>
+      
+      <!-- Párrafo descriptivo en color blanco suave -->
+      <p class="fs-6 fw-light lh-base mb-4 text-white">
+         Analizamos los rumores y noticias falsas que circulan en las redes sociales. Te ayudamos a separar los hechos reales de los engaños para que no compartas desinformación.
+      </p>
+
+      <!-- Botón rectangular transparente con borde blanco -->
+      <a href="tecnologia.html" class="btn btn-outline-light text-uppercase fw-semibold rounded-0 px-4 py-2" style="font-size: 0.75rem; letter-spacing: 1px;">
+        VER NOVEDADES →
+      </a>
+      
+    </div>
+  </div>
+
+</section>
+<section class="position-relative vh-100 vw-100 overflow-hidden w-100 m-0 p-0 text-white">
+
+  <!-- 1. IMAGEN DE FONDO DE ALTA CALIDAD -->
+  <!-- Puedes buscar una foto de un cohete, satélite o un servidor en Pexels y llamarla cohete.jpg -->
+  <img src="img/cotidiana.webp" alt="Lanzamiento Tecnológico" 
+       class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; z-index: 0;">
+  
+  <!-- Capa oscura sutil para proteger el texto -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25" style="z-index: 1;"></div>
+
+  <!-- 2. TEXTOS ALINEADOS A LA DERECHA (justify-content-center y align-items-end) -->
+  <div class="position-relative w-100 h-100 d-flex flex-column justify-content-center align-items-end p-5 pe-lg-5" style="z-index: 2;">
+    <div class="pe-md-5 me-md-5 text-start" style="max-width: 600px;">
+      
+      <!-- Título de la noticia en mayúsculas sostenidas -->
+      <h2 class="fw-bold text-uppercase text-white display-4 mb-3 lh-1" style="letter-spacing: -1px;">
+        Tu vida conectada
+      </h2>
+      
+      <!-- Párrafo descriptivo en color blanco suave -->
+      <p class="fs-6 fw-light lh-base mb-4 text-white">
+         Te damos trucos para sacarle el máximo provecho a tus aplicaciones favoritas, consejos para el bienestar digital y guías para que los menores de edad usen internet sin riesgos.
+      </p>
+
+      <!-- Botón rectangular transparente con borde blanco -->
+      <a href="tecnologia.html" class="btn btn-outline-light text-uppercase fw-semibold rounded-0 px-4 py-2" style="font-size: 0.75rem; letter-spacing: 1px;">
+        Aprende más →
+      </a>
+      
+    </div>
+  </div>
+
+</section>
+<section class="position-relative vh-100 vw-100 overflow-hidden w-100 m-0 p-0 text-white">
+
+  <!-- 1. IMAGEN DE FONDO DE ALTA CALIDAD -->
+  <!-- Puedes buscar una foto de un cohete, satélite o un servidor en Pexels y llamarla cohete.jpg -->
+  <img src="img/soporte.jpg" alt="Lanzamiento Tecnológico" 
+       class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; z-index: 0;">
+  
+  <!-- Capa oscura sutil para proteger el texto -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25" style="z-index: 1;"></div>
+
+  <!-- 2. TEXTOS ALINEADOS A LA DERECHA (justify-content-center y align-items-end) -->
+  <div class="position-relative w-100 h-100 d-flex flex-column justify-content-center align-items-end p-5 pe-lg-5" style="z-index: 2;">
+    <div class="pe-md-5 me-md-5 text-start" style="max-width: 600px;">
+      
+      <!-- Título de la noticia en mayúsculas sostenidas -->
+      <h2 class="fw-bold text-uppercase text-white display-4 mb-3 lh-1" style="letter-spacing: -1px;">
+        Soporte para la comunidad
+      </h2>
+      
+      <!-- Párrafo descriptivo en color blanco suave -->
+      <p class="fs-6 fw-light lh-base mb-4 text-white">
+         ¿Te hackearon el WhatsApp? ¿Recibiste un correo extraño? Creamos guías de emergencia paso a paso para resolver tus problemas de seguridad más comunes de forma rápida.
+      </p>
+
+      <!-- Botón rectangular transparente con borde blanco -->
+      <a href="tecnologia.html" class="btn btn-outline-light text-uppercase fw-semibold rounded-0 px-4 py-2" style="font-size: 0.75rem; letter-spacing: 1px;">
+        contactanos →
+      </a>
+      
+    </div>
+  </div>
+
+</section>
+
+
 
 </main>
 
-
 <!-- FOOTER -->
-<footer class="bg-dark text-secondary text-center py-3 border-top border-secondary">
-    <div class="container">
-        <small>© 2026 AlertaTech News</small>
+<footer class="text-white py-1 m-0 p-0" style="background-color: #000000; font-size: 0.7rem; letter-spacing: 1px;">
+    <div class="container-fluid px-5">
+        <div class="row align-items-center gy-3">
+            
+            <!-- 1. ICONO IZQUIERDA -->
+            <div class="col-12 col-md-3 text-center text-md-start">
+                <a href="#" class="text-secondary text-decoration-none bg-dark rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
+
+            <!-- 2. ENLACES CENTRALES -->
+            <div class="col-12 col-md-6 d-flex justify-content-center flex-wrap gap-4 text-uppercase fw-semibold">
+                <a href="tecnologia.html" class="text-white text-decoration-none text-hover-white">Tecnología</a>
+                <a href="noticias.html" class="text-white text-decoration-none text-hover-white">Actualizaciones</a>
+                <a href="#" class="text-white text-decoration-none text-hover-white">Política de Privacidad</a>
+                <a href="contacto.html" class="text-white text-decoration-none text-hover-white">Contacto</a>
+            </div>
+
+            <!-- 3. COPYRIGHT DERECHA -->
+            <div class="col-12 col-md-3 text-center text-md-end text-uppercase fw-semibold text-white" style="font-size: 0.65rem;">
+              © 2026 AlertaTech News
+            </div>
+
+        </div>
     </div>
 </footer>
 

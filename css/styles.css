@@ -218,14 +218,9 @@ body.modo-oscuro .text-muted,
 body.modo-oscuro .text-secondary {
     color: #b3b3b3 !important; 
 }
-/* --- ESTO PINTARÁ LA CAJA GRANDE DE NEGRO EN MODO OSCURO --- */
-body.modo-oscuro main,
-body.modo-oscuro .bg-light,
-body.modo-oscuro .bg-white,
-body.modo-oscuro .container,
-body.modo-oscuro .card,
-body.modo-oscuro section {
-    background-color: #1e1e1e !important; /* Un gris oscuro muy elegante */
+.hero {
+    padding-top: 140px !important;
+    margin-top: 40px !important;
 }
 /* --- BUSCADOR EXPANDIBLE MODERNO --- */
 .buscador-contenedor {
@@ -275,4 +270,9 @@ body.modo-oscuro section {
 /* Esto hace que aparezca la manito (puntero) en todo el menú */
 .nav-link, .dropdown-item {
     cursor: pointer !important;
+}
+.hero-space {
+    min-height: 180vh; /* Hace que la sección del video ocupe el 80% de la altura de la pantalla */
+    background-size: cover;
+    background-position: center;
 }
