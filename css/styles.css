@@ -276,3 +276,18 @@ body.modo-oscuro .text-secondary {
     background-size: cover;
     background-position: center;
 }
+/* ========== CLASES UTILITARIAS PARA LIMPIAR INLINE  nuevo......limpio========== */
+.btn-sm-letter {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+.section-img {
+    object-fit: cover;
+    z-index: 0;
+}
+.section-overlay {
+    z-index: 1;
+}
+.section-text {
+    z-index: 2;
+}
