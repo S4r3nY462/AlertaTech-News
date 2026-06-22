@@ -14,7 +14,7 @@
 
 <header class="text-center">
     <!--expand-lg hace que sea responsivo-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-light position-absolute top-0 start-0 w-100" style="z-index: 3;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-light position-sticky top-0 w-100" style="z-index: 1030;">
   <div class="container-fluid px-4 px-lg-5 py-0">
 
     <!-- marca original a la izquierda -->
@@ -33,18 +33,7 @@
         
         
 
-        <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fw-semibold px-2 text-black" href="#" id="dropEstafas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        noticias
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark rounded-3 shadow border-0 mt-2" aria-labelledby="dropEstafas" style="font-size: 0.85rem;">
-            <li><a class="dropdown-item py-2 d-flex align-items-center" href="estafas.html"><i class="bi bi-grid-fill text-muted me-2"></i> Todas</a></li>
-            <li><hr class="dropdown-divider border-secondary"></li>
-            <li><a class="dropdown-item py-2 d-flex align-items-center" href="noticias.html#malware"><i class="bi bi-envelope-open-fill text-danger me-2"></i> malware</a></li>
-            <li><a class="dropdown-item py-2 d-flex align-items-center" href="noticias.html#ransomware"><i class="bi bi-chat-left-text-fill text-info me-2"></i> ransomware</a></li>
-            <li><a class="dropdown-item py-2 d-flex align-items-center" href="noticias.html#seguridad-redes"><i class="bi bi-telephone-inbound-fill text-success me-2"></i> seguridad en redes</a></li>
-          </ul>
-        </li>
+        <!-- Noticias eliminado del nav superior -->
         <!-- Dropdown 1: Estafas Digitales con Iconos -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle fw-semibold px-2 text-black" href="#" id="dropEstafas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -99,9 +88,7 @@
           <a class="nav-link fw-semibold px-2 text-black" href="entrevistas.html">Entrevistas</a>
         </li>
         
-        <li class="nav-item me-lg-3">
-          <a class="nav-link fw-semibold px-2 text-black" href="contacto.html">Contacto</a>
-        </li>
+        <!-- Contacto eliminado del nav superior -->
       </ul>
 
       <!-- Formulario de búsqueda -->
@@ -118,7 +105,7 @@
 </header>
 
 <!-- CONTENIDO DE INTELIGENCIA ARTIFICIAL -->
-<main class="container py-5 mt-5">
+<main class="container py-5">
     <div class="row">
         <div class="col-12">
             <h1 class="display-4 fw-bold">Inteligencia Artificial</h1>
@@ -156,7 +143,7 @@
     </div>
 
     <!-- DEEPFAKES -->
-    <div id="deepfakes" class="row mt-5 pt-3 border-top border-secondary">
+    <div id="deepfakes" class="row mt-4 pt-3 border-top border-secondary">
         <div class="col-12">
             <span class="badge bg-danger mb-2">🔴 Crítico</span>
             <h2 class="h3">Deepfakes: La manipulación digital que preocupa</h2>
@@ -180,7 +167,7 @@
     </div>
 
     <!-- CHATBOTS -->
-    <div id="chatbots" class="row mt-5 pt-3 border-top border-secondary">
+    <div id="chatbots" class="row mt-4 pt-3 border-top border-secondary">
         <div class="col-12">
             <span class="badge bg-success mb-2">🟢 Informativo</span>
             <h2 class="h3">Chatbots: Atención al cliente con IA</h2>
@@ -206,7 +193,7 @@
     </div>
 
     <!-- IA EN SEGURIDAD -->
-    <div id="ia-seguridad" class="row mt-5 pt-3 border-top border-secondary">
+    <div id="ia-seguridad" class="row mt-4 pt-3 border-top border-secondary">
         <div class="col-12">
             <span class="badge bg-info text-dark mb-2">🔵 Informativo</span>
             <h2 class="h3">IA en Ciberseguridad: El futuro de la protección</h2>
